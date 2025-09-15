@@ -1,0 +1,12 @@
+C:\Users\dihba\Desktop\Coptis\src\CosmenticFormulaApp.Domain\bin\Debug\net8.0\CosmenticFormulaApp.Domain.deps.json
+C:\Users\dihba\Desktop\Coptis\src\CosmenticFormulaApp.Domain\bin\Debug\net8.0\CosmenticFormulaApp.Domain.dll
+C:\Users\dihba\Desktop\Coptis\src\CosmenticFormulaApp.Domain\bin\Debug\net8.0\CosmenticFormulaApp.Domain.pdb
+C:\Users\dihba\Desktop\Coptis\src\CosmenticFormulaApp.Domain\obj\Debug\net8.0\CosmenticFormulaApp.Domain.csproj.AssemblyReference.cache
+C:\Users\dihba\Desktop\Coptis\src\CosmenticFormulaApp.Domain\obj\Debug\net8.0\CosmenticFormulaApp.Domain.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\dihba\Desktop\Coptis\src\CosmenticFormulaApp.Domain\obj\Debug\net8.0\CosmenticFormulaApp.Domain.AssemblyInfoInputs.cache
+C:\Users\dihba\Desktop\Coptis\src\CosmenticFormulaApp.Domain\obj\Debug\net8.0\CosmenticFormulaApp.Domain.AssemblyInfo.cs
+C:\Users\dihba\Desktop\Coptis\src\CosmenticFormulaApp.Domain\obj\Debug\net8.0\CosmenticFormulaApp.Domain.csproj.CoreCompileInputs.cache
+C:\Users\dihba\Desktop\Coptis\src\CosmenticFormulaApp.Domain\obj\Debug\net8.0\CosmenticFormulaApp.Domain.dll
+C:\Users\dihba\Desktop\Coptis\src\CosmenticFormulaApp.Domain\obj\Debug\net8.0\refint\CosmenticFormulaApp.Domain.dll
+C:\Users\dihba\Desktop\Coptis\src\CosmenticFormulaApp.Domain\obj\Debug\net8.0\CosmenticFormulaApp.Domain.pdb
+C:\Users\dihba\Desktop\Coptis\src\CosmenticFormulaApp.Domain\obj\Debug\net8.0\ref\CosmenticFormulaApp.Domain.dll

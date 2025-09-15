@@ -1,0 +1,56 @@
+﻿@page "/"
+
+<PageTitle>Dashboard - Cosmetic Formula Manager</PageTitle>
+
+<div class="dashboard-container">
+    <div class="welcome-section">
+        <h2>Welcome to Cosmetic Formula Manager</h2>
+        <p class="lead">Manage your cosmetic formulas, raw materials, and analyze substance usage efficiently.</p>
+    </div>
+
+    <div class="quick-actions row g-3">
+        <div class="col-md-3">
+            <div class="card h-100">
+                <div class="card-body text-center">
+                    <span class="oi oi-plus display-4 text-primary"></span>
+                    <h5 class="card-title mt-3">Import Formula</h5>
+                    <p class="card-text">Upload JSON files to add new formulas</p>
+                    <NavLink href="/import" class="btn btn-primary">Get Started</NavLink>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-3">
+            <div class="card h-100">
+                <div class="card-body text-center">
+                    <span class="oi oi-list-rich display-4 text-info"></span>
+                    <h5 class="card-title mt-3">View Formulas</h5>
+                    <p class="card-text">Browse and manage existing formulas</p>
+                    <NavLink href="/formulas" class="btn btn-info">View All</NavLink>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-3">
+            <div class="card h-100">
+                <div class="card-body text-center">
+                    <span class="oi oi-graph display-4 text-success"></span>
+                    <h5 class="card-title mt-3">Substance Analysis</h5>
+                    <p class="card-text">Analyze substance usage across formulas</p>
+                    <NavLink href="/analysis" class="btn btn-success">Analyze</NavLink>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-3">
+            <div class="card h-100">
+                <div class="card-body text-center">
+                    <span class="oi oi-beaker display-4 text-warning"></span>
+                    <h5 class="card-title mt-3">Raw Materials</h5>
+                    <p class="card-text">Manage prices and materials</p>
+                    <NavLink href="/raw-materials" class="btn btn-warning">Manage</NavLink>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

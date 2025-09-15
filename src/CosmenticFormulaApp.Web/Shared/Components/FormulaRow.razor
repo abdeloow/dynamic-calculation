@@ -1,0 +1,27 @@
+﻿<tr>
+    <td>
+        <strong>@Formula.Name</strong>
+        @if (Formula.IsHighlighted)
+        {
+            <span class="badge bg-warning ms-2">Updated</span>
+        }
+    </td>
+    <td>@Formula.Weight @Formula.WeightUnit</td>
+    <td>@Formula.TotalCostFormatted</td>
+    <td>@Formula.CreatedAt.ToString("MMM dd, yyyy")</td>
+    <td>
+        <button class="btn btn-sm btn-outline-danger" @onclick="HandleDelete">
+            Delete
+        </button>
+    </td>
+</tr>
+
+@code {
+    [Parameter] public FormulaListItemDto Formula { get; set; } = new();
+    [Parameter] public EventCallback<int> OnDelete { get; set; }
+
+    private async Task HandleDelete()
+    {
+        await OnDelete.InvokeAsync(Formula.Id);
+    }
+}

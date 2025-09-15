@@ -1,0 +1,64 @@
+﻿@if (Data?.Any() == true)
+{
+    <div class="substance-table-container">
+        <div class="card">
+            <div class="card-header">
+                <h5 class="mb-0">Substance Usage Details</h5>
+            </div>
+            <div class="card-body p-0">
+                <div class="table-responsive">
+                    <table class="table table-hover mb-0">
+                        <thead class="table-dark">
+                            <tr>
+                                <th>Substance Name</th>
+                                <th>Total Weight</th>
+                                <th>Formula Count</th>
+                                <th>Average per Formula</th>
+                                <th>Usage Visualization</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            @foreach (var substance in Data)
+                            {
+                                <tr>
+                                    <td>
+                                        <strong>@substance.Name</strong>
+                                    </td>
+                                    <td>
+                                        <span class="fw-bold">@substance.TotalWeightFormatted</span>
+                                    </td>
+                                    <td>
+                                        <span class="badge bg-info">@substance.FormulaCount</span>
+                                    </td>
+                                    <td>
+                                        @($"{substance.AverageWeightPerFormula:F2} g")
+                                    </td>
+                                    <td>
+                                        <div class="usage-bar-container">
+                                            <div class="usage-bar">
+                                                <div class="usage-fill bg-primary" style="width: @GetUsagePercentage(substance)%"></div>
+                                            </div>
+                                            <small class="text-muted">@GetUsagePercentage(substance).ToString("F0")%</small>
+                                        </div>
+                                    </td>
+                                </tr>
+                            }
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+}
+
+@code {
+    [Parameter] public List<SubstanceAnalysisDto> Data { get; set; } = new();
+
+    private decimal maxWeight => Data?.Max(d => d.TotalWeight) ?? 1;
+
+    private double GetUsagePercentage(SubstanceAnalysisDto substance)
+    {
+        if (maxWeight == 0) return 0;
+        return (double)(substance.TotalWeight / maxWeight * 100);
+    }
+}

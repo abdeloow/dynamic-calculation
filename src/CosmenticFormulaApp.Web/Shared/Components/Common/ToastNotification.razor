@@ -1,0 +1,58 @@
+﻿@inject INotificationService NotificationService
+@implements IDisposable
+
+<div class="toast-container position-fixed top-0 end-0 p-3" style="z-index: 1055;">
+    @foreach (var toast in toasts)
+    {
+        <div class="toast show" role="alert">
+            <div class="toast-header">
+                <strong class="me-auto">@GetToastTitle(toast.Type)</strong>
+                <small>@toast.Timestamp.ToString("HH:mm")</small>
+                <button type="button" class="btn-close" @onclick="() => RemoveToast(toast)"></button>
+            </div>
+            <div class="toast-body">
+                @toast.Message
+            </div>
+        </div>
+    }
+</div>
+
+@code {
+    private List<ToastMessage> toasts = new();
+
+    protected override void OnInitialized()
+    {
+        NotificationService.OnToastAdded += AddToast;
+    }
+
+    private void AddToast(ToastMessage toast)
+    {
+        toasts.Add(toast);
+        InvokeAsync(StateHasChanged);
+
+        Task.Delay(5000).ContinueWith(_ => RemoveToast(toast));
+    }
+
+    private void RemoveToast(ToastMessage toast)
+    {
+        toasts.Remove(toast);
+        InvokeAsync(StateHasChanged);
+    }
+
+    private string GetToastTitle(ToastType type)
+    {
+        return type switch
+        {
+            ToastType.Success => "Success",
+            ToastType.Error => "Error",
+            ToastType.Warning => "Warning",
+            ToastType.Info => "Information",
+            _ => "Notification"
+        };
+    }
+
+    public void Dispose()
+    {
+        NotificationService.OnToastAdded -= AddToast;
+    }
+}

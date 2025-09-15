@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "V8dRzXS2MLM=",
+  "success": true,
+  "projectFilePath": "C:\\Users\\dihba\\Desktop\\Coptis\\src\\CosmenticFormulaApp.Domain\\CosmenticFormulaApp.Domain.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\dihba\\.nuget\\packages\\mediatr.contracts\\2.0.1\\mediatr.contracts.2.0.1.nupkg.sha512"
+  ],
+  "logs": []
+}

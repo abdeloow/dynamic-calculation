@@ -1,0 +1,15 @@
+C:\Users\dihba\Desktop\Coptis\src\CosmenticFormulaApp.Application\bin\Debug\net9.0\CosmenticFormulaApp.Application.deps.json
+C:\Users\dihba\Desktop\Coptis\src\CosmenticFormulaApp.Application\bin\Debug\net9.0\CosmenticFormulaApp.Application.dll
+C:\Users\dihba\Desktop\Coptis\src\CosmenticFormulaApp.Application\bin\Debug\net9.0\CosmenticFormulaApp.Application.pdb
+C:\Users\dihba\Desktop\Coptis\src\CosmenticFormulaApp.Application\bin\Debug\net9.0\CosmenticFormulaApp.Domain.dll
+C:\Users\dihba\Desktop\Coptis\src\CosmenticFormulaApp.Application\bin\Debug\net9.0\CosmenticFormulaApp.Domain.pdb
+C:\Users\dihba\Desktop\Coptis\src\CosmenticFormulaApp.Application\obj\Debug\net9.0\CosmenticFormulaApp.Application.csproj.AssemblyReference.cache
+C:\Users\dihba\Desktop\Coptis\src\CosmenticFormulaApp.Application\obj\Debug\net9.0\CosmenticFormulaApp.Application.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\dihba\Desktop\Coptis\src\CosmenticFormulaApp.Application\obj\Debug\net9.0\CosmenticFormulaApp.Application.AssemblyInfoInputs.cache
+C:\Users\dihba\Desktop\Coptis\src\CosmenticFormulaApp.Application\obj\Debug\net9.0\CosmenticFormulaApp.Application.AssemblyInfo.cs
+C:\Users\dihba\Desktop\Coptis\src\CosmenticFormulaApp.Application\obj\Debug\net9.0\CosmenticFormulaApp.Application.csproj.CoreCompileInputs.cache
+C:\Users\dihba\Desktop\Coptis\src\CosmenticFormulaApp.Application\obj\Debug\net9.0\Cosmenti.308151C9.Up2Date
+C:\Users\dihba\Desktop\Coptis\src\CosmenticFormulaApp.Application\obj\Debug\net9.0\CosmenticFormulaApp.Application.dll
+C:\Users\dihba\Desktop\Coptis\src\CosmenticFormulaApp.Application\obj\Debug\net9.0\refint\CosmenticFormulaApp.Application.dll
+C:\Users\dihba\Desktop\Coptis\src\CosmenticFormulaApp.Application\obj\Debug\net9.0\CosmenticFormulaApp.Application.pdb
+C:\Users\dihba\Desktop\Coptis\src\CosmenticFormulaApp.Application\obj\Debug\net9.0\ref\CosmenticFormulaApp.Application.dll

@@ -1,0 +1,112 @@
+﻿<div class="drop-zone @GetDropZoneClass()"
+     @ondragover="HandleDragOver"
+     @ondragover:preventDefault="true"
+     @ondrop="HandleDrop"
+     @ondrop:preventDefault="true"
+     @ondragenter="HandleDragEnter"
+     @ondragleave="HandleDragLeave">
+
+    <div class="drop-zone-content">
+        @if (isDragOver)
+        {
+            <div class="drag-indicator">
+                <span class="oi oi-cloud-upload drag-icon"></span>
+                <p class="fw-bold">Drop files here</p>
+            </div>
+        }
+        else
+        {
+            <div class="upload-prompt">
+                <span class="oi oi-cloud-upload upload-icon"></span>
+                <h4>Drop JSON files here</h4>
+                <p>or <button type="button" class="btn btn-link p-0" @onclick="TriggerFileInput">browse files</button></p>
+                <small class="text-muted">Accepts: @AcceptedTypes @(AllowMultiple ? "(multiple files allowed)" : "")</small>
+            </div>
+        }
+    </div>
+
+    <InputFile @ref="fileInput"
+               OnChange="HandleFileInput"
+               multiple="@AllowMultiple"
+               accept="@AcceptedTypes"
+               style="display: none;" />
+</div>
+
+@code {
+    [Parameter] public EventCallback<List<FileInfo>> OnFilesSelected { get; set; }
+    [Parameter] public bool AllowMultiple { get; set; } = false;
+    [Parameter] public string AcceptedTypes { get; set; } = "*";
+
+    private InputFile fileInput = new();
+    private bool isDragOver = false;
+
+    private string GetDropZoneClass()
+    {
+        return isDragOver ? "drag-over" : "";
+    }
+
+    private void HandleDragOver(DragEventArgs e)
+    {
+        // Prevent default to allow drop
+    }
+
+    private void HandleDragEnter(DragEventArgs e)
+    {
+        isDragOver = true;
+    }
+
+    private void HandleDragLeave(DragEventArgs e)
+    {
+        isDragOver = false;
+    }
+
+    private async Task HandleDrop(DragEventArgs e)
+    {
+        isDragOver = false;
+
+        // Note: In Blazor Server, drag-drop file access is limited
+        // This is a simplified implementation
+        NotificationService?.ShowInfo("Please use the browse button to select files");
+    }
+
+    private void TriggerFileInput()
+    {
+        // Use JS interop to trigger file input
+        JSRuntime.InvokeVoidAsync("triggerFileInput");
+    }
+
+    private async Task HandleFileInput(InputFileChangeEventArgs e)
+    {
+        var files = new List<FileInfo>();
+
+        var maxFiles = AllowMultiple ? 10 : 1;
+        var selectedFiles = e.GetMultipleFiles(maxFiles);
+
+        foreach (var file in selectedFiles)
+        {
+            if (IsValidFileType(file.Name))
+            {
+                files.Add(new FileInfo { Name = file.Name, Size = file.Size });
+            }
+        }
+
+        if (files.Any())
+        {
+            await OnFilesSelected.InvokeAsync(files);
+        }
+    }
+
+    private bool IsValidFileType(string fileName)
+    {
+        if (AcceptedTypes == "*") return true;
+
+        var extension = Path.GetExtension(fileName);
+        return AcceptedTypes.Split(',').Any(type => type.Trim() == extension);
+    }
+
+    public class FileInfo
+    {
+        public string Name { get; set; } = "";
+        public long Size { get; set; }
+    }
+}

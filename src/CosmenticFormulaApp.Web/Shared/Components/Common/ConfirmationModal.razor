@@ -1,0 +1,60 @@
+﻿@if (isVisible)
+{
+    <div class="modal fade show d-block" tabindex="-1" style="background-color: rgba(0,0,0,0.5);">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">@Title</h5>
+                    <button type="button" class="btn-close" @onclick="Hide"></button>
+                </div>
+                <div class="modal-body">
+                    <p>@Message</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" @onclick="Hide">
+                        @CancelText
+                    </button>
+                    <button type="button" class="btn @ConfirmClass" @onclick="Confirm">
+                        @ConfirmText
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+}
+
+@code {
+    [Parameter] public string Title { get; set; } = "Confirm Action";
+    [Parameter] public string Message { get; set; } = "Are you sure you want to proceed?";
+    [Parameter] public string ConfirmText { get; set; } = "Confirm";
+    [Parameter] public string CancelText { get; set; } = "Cancel";
+    [Parameter] public string ConfirmClass { get; set; } = "btn-primary";
+    [Parameter] public EventCallback OnConfirm { get; set; }
+    [Parameter] public EventCallback OnCancel { get; set; }
+
+    private bool isVisible = false;
+
+    public void Show()
+    {
+        isVisible = true;
+        StateHasChanged();
+    }
+
+    public void Hide()
+    {
+        isVisible = false;
+        StateHasChanged();
+    }
+
+    private async Task Confirm()
+    {
+        await OnConfirm.InvokeAsync();
+        Hide();
+    }
+
+    private async Task Cancel()
+    {
+        await OnCancel.InvokeAsync();
+        Hide();
+    }
+}

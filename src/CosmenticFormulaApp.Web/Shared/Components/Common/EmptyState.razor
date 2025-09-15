@@ -1,0 +1,21 @@
+﻿<div class="empty-state text-center py-5">
+    <div class="empty-icon mb-4">
+        <span class="oi oi-@Icon display-1 text-muted"></span>
+    </div>
+    <h4 class="text-muted">@Message</h4>
+    @if (!string.IsNullOrEmpty(ActionText) && !string.IsNullOrEmpty(ActionHref))
+    {
+        <div class="mt-4">
+            <NavLink href="@ActionHref" class="btn btn-primary">
+                @ActionText
+            </NavLink>
+        </div>
+    }
+</div>
+
+@code {
+    [Parameter] public string Message { get; set; } = "No data available";
+    [Parameter] public string Icon { get; set; } = "info";
+    [Parameter] public string ActionText { get; set; } = "";
+    [Parameter] public string ActionHref { get; set; } = "";
+}

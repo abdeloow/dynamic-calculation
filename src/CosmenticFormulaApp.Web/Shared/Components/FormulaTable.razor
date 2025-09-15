@@ -1,0 +1,30 @@
+﻿@if (Formulas?.Any() == true)
+{
+    <div class="table-responsive">
+        <table class="table table-hover">
+            <thead class="table-dark">
+                <tr>
+                    <th>Name</th>
+                    <th>Weight</th>
+                    <th>Total Cost</th>
+                    <th>Created</th>
+                    <th>Actions</th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var formula in Formulas)
+                {
+                    <FormulaRow Formula="formula" 
+                               OnDelete="OnDelete" 
+                               OnHighlightClear="OnHighlightClear" />
+                }
+            </tbody>
+        </table>
+    </div>
+}
+
+@code {
+    [Parameter] public List<FormulaListItemDto> Formulas { get; set; } = new();
+    [Parameter] public EventCallback<int> OnDelete { get; set; }
+    [Parameter] public EventCallback<int> OnHighlightClear { get; set; }
+}
