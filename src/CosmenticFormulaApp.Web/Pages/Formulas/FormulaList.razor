@@ -1,12 +1,278 @@
 ﻿@page "/formulas"
+@using CosmenticFormulaApp.Application.DTOs.Output
+@using CosmenticFormulaApp.Application.Formulas.Queries.GetFormulasList
+@using CosmenticFormulaApp.Application.Formulas.Commands.DeleteFormula
+@using CosmenticFormulaApp.Web.Services
+@using CosmenticFormulaApp.Web.Shared.Components.Common
+@using MediatR
+@using Microsoft.AspNetCore.SignalR.Client
+@inject IMediator Mediator
+@inject INotificationService NotificationService
+@inject IJSRuntime JSRuntime
+@inject NavigationManager NavigationManager
+@implements IAsyncDisposable
 
 <PageTitle>Formulas - Cosmetic Formula Manager</PageTitle>
 
-<div class="container">
-    <h2>Formula Management</h2>
-    <div class="alert alert-info">
-        <h4>Formula List</h4>
-        <p>View and manage your cosmetic formulas here.</p>
-        <p><em>This functionality will be fully implemented once the backend is complete.</em></p>
+<div class="container-fluid">
+    <div class="d-flex justify-content-between align-items-center mb-4">
+        <h2>Formula Management</h2>
+        <div class="d-flex gap-2">
+            <NavLink href="/import" class="btn btn-primary">
+                <span class="oi oi-plus"></span> Import New Formula
+            </NavLink>
+            <button class="btn btn-outline-secondary" @onclick="RefreshFormulas">
+                <span class="oi oi-reload"></span> Refresh
+            </button>
+        </div>
     </div>
+
+    <!-- Search and Filter Controls -->
+    <div class="row mb-3">
+        <div class="col-md-6">
+            <SearchBox @bind-Value="searchFilter" 
+                      OnValueChanged="OnSearchChanged"
+                      Placeholder="Search formulas by name..."
+                      Label="Search Formulas" />
+        </div>
+        <div class="col-md-3">
+            <label class="form-label">Sort By</label>
+            <select class="form-select" @onchange="OnSortChanged">
+                <option value="name">Name</option>
+                <option value="weight">Weight</option>
+                <option value="totalcost">Total Cost</option>
+                <option value="createdat">Created Date</option>
+            </select>
+        </div>
+        <div class="col-md-3">
+            <label class="form-label">Order</label>
+            <select class="form-select" @onchange="OnOrderChanged">
+                <option value="true">Ascending</option>
+                <option value="false">Descending</option>
+            </select>
+        </div>
+    </div>
+
+    <!-- Formula Table -->
+    @if (isLoading)
+    {
+        <LoadingSpinner Message="Loading formulas..." />
+    }
+    else if (formulas?.Any() == true)
+    {
+        <FormulaTable Formulas="formulas" 
+                     OnDelete="HandleDeleteFormula" 
+                     OnHighlightClear="HandleHighlightClear" />
+    }
+    else
+    {
+        <EmptyState Message="No formulas found" 
+                   Icon="list-rich" 
+                   ActionText="Import Your First Formula"
+                   ActionHref="/import" />
+    }
 </div>
+
+<!-- Delete Confirmation Modal -->
+<ConfirmationModal @ref="deleteModal"
+                  Title="Delete Formula"
+                  Message="@deleteMessage"
+                  ConfirmText="Delete"
+                  CancelText="Cancel"
+                  ConfirmClass="btn-danger"
+                  OnConfirm="ConfirmDelete" />
+
+<!-- Toast Notifications -->
+<ToastNotification />
+
+@code {
+    private List<FormulaListItemDto> formulas = new();
+    private List<FormulaListItemDto> allFormulas = new();
+    private bool isLoading = true;
+    private string searchFilter = "";
+    private string sortBy = "name";
+    private bool ascending = true;
+    
+    private ConfirmationModal deleteModal = new();
+    private int formulaToDelete = 0;
+    private string deleteMessage = "";
+    
+    private HubConnection? hubConnection;
+
+    protected override async Task OnInitializedAsync()
+    {
+        await InitializeSignalR();
+        await LoadFormulas();
+    }
+
+    private async Task InitializeSignalR()
+    {
+        hubConnection = new HubConnectionBuilder()
+            .WithUrl(NavigationManager.ToAbsoluteUri("/formulaUpdateHub"))
+            .Build();
+
+        hubConnection.On<List<int>>("FormulaHighlighted", (formulaIds) =>
+        {
+            InvokeAsync(() => HighlightFormulas(formulaIds));
+        });
+
+        hubConnection.On<int, string>("FormulaImported", (formulaId, formulaName) =>
+        {
+            InvokeAsync(() => {
+                NotificationService.ShowSuccess($"Formula '{formulaName}' imported successfully");
+                LoadFormulas();
+            });
+        });
+
+        await hubConnection.StartAsync();
+        await hubConnection.SendAsync("JoinFormulaUpdates");
+    }
+
+    private async Task LoadFormulas()
+    {
+        isLoading = true;
+        StateHasChanged();
+
+        try
+        {
+            var query = new GetFormulasListQuery
+            {
+                NameFilter = string.IsNullOrEmpty(searchFilter) ? null : searchFilter,
+                SortBy = sortBy,
+                Ascending = ascending
+            };
+
+            var result = await Mediator.Send(query);
+            
+            if (result.IsSuccess)
+            {
+                allFormulas = result.Data ?? new();
+                ApplyFiltering();
+            }
+            else
+            {
+                NotificationService.ShowError("Failed to load formulas");
+                formulas = new();
+            }
+        }
+        catch (Exception ex)
+        {
+            NotificationService.ShowError($"Error loading formulas: {ex.Message}");
+            formulas = new();
+        }
+        finally
+        {
+            isLoading = false;
+            StateHasChanged();
+        }
+    }
+
+    private void ApplyFiltering()
+    {
+        formulas = allFormulas;
+        if (!string.IsNullOrEmpty(searchFilter))
+        {
+            formulas = formulas.Where(f => f.Name.Contains(searchFilter, StringComparison.OrdinalIgnoreCase)).ToList();
+        }
+    }
+
+    private async Task OnSearchChanged()
+    {
+        ApplyFiltering();
+        StateHasChanged();
+    }
+
+    private async Task OnSortChanged(ChangeEventArgs e)
+    {
+        sortBy = e.Value?.ToString() ?? "name";
+        await LoadFormulas();
+    }
+
+    private async Task OnOrderChanged(ChangeEventArgs e)
+    {
+        ascending = bool.Parse(e.Value?.ToString() ?? "true");
+        await LoadFormulas();
+    }
+
+    private async Task RefreshFormulas()
+    {
+        await LoadFormulas();
+        NotificationService.ShowInfo("Formulas refreshed");
+    }
+
+    private void HandleDeleteFormula(int formulaId)
+    {
+        var formula = formulas.FirstOrDefault(f => f.Id == formulaId);
+        if (formula != null)
+        {
+            formulaToDelete = formulaId;
+            deleteMessage = $"Are you sure you want to delete the formula '{formula.Name}'? This action cannot be undone.";
+            deleteModal.Show();
+        }
+    }
+
+    private async Task ConfirmDelete()
+    {
+        try
+        {
+            var command = new DeleteFormulaCommand { FormulaId = formulaToDelete };
+            var result = await Mediator.Send(command);
+            
+            if (result.IsSuccess)
+            {
+                await LoadFormulas();
+                NotificationService.ShowSuccess("Formula deleted successfully");
+            }
+            else
+            {
+                NotificationService.ShowError($"Failed to delete formula: {result.Error}");
+            }
+        }
+        catch (Exception ex)
+        {
+            NotificationService.ShowError($"Error deleting formula: {ex.Message}");
+        }
+        
+        formulaToDelete = 0;
+    }
+
+    private void HandleHighlightClear(int formulaId)
+    {
+        var formula = formulas.FirstOrDefault(f => f.Id == formulaId);
+        if (formula != null)
+        {
+            formula.IsHighlighted = false;
+            StateHasChanged();
+        }
+    }
+
+    private void HighlightFormulas(List<int> formulaIds)
+    {
+        foreach (var formulaId in formulaIds)
+        {
+            var formula = formulas.FirstOrDefault(f => f.Id == formulaId);
+            if (formula != null)
+            {
+                formula.IsHighlighted = true;
+            }
+        }
+        StateHasChanged();
+        
+        // Auto-clear highlighting after 10 seconds
+        Task.Delay(10000).ContinueWith(_ => InvokeAsync(() =>
+        {
+            foreach (var formulaId in formulaIds)
+            {
+                HandleHighlightClear(formulaId);
+            }
+        }));
+    }
+
+    public async ValueTask DisposeAsync()
+    {
+        if (hubConnection is not null)
+        {
+            await hubConnection.DisposeAsync();
+        }
+    }
+}

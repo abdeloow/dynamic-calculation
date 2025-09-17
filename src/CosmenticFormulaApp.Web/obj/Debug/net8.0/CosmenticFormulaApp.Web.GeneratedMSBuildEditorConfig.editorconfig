@@ -60,6 +60,10 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcSW5kZXgucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 
 
+[C:/Users/dihba/Desktop/Coptis/src/CosmenticFormulaApp.Web/Pages/RawMaterials/RawMaterialsList.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUmF3TWF0ZXJpYWxzXFJhd01hdGVyaWFsc0xpc3QucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Users/dihba/Desktop/Coptis/src/CosmenticFormulaApp.Web/Shared/Components/Common/ConfirmationModal.razor]
 build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXENvbXBvbmVudHNcQ29tbW9uXENvbmZpcm1hdGlvbk1vZGFsLnJhem9y
 build_metadata.AdditionalFiles.CssScope = 
@@ -98,6 +102,10 @@ build_metadata.AdditionalFiles.CssScope =
 
 [C:/Users/dihba/Desktop/Coptis/src/CosmenticFormulaApp.Web/Shared/Components/Header.razor]
 build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXENvbXBvbmVudHNcSGVhZGVyLnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/dihba/Desktop/Coptis/src/CosmenticFormulaApp.Web/Shared/Components/Layout/Header.razor]
+build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXENvbXBvbmVudHNcTGF5b3V0XEhlYWRlci5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/dihba/Desktop/Coptis/src/CosmenticFormulaApp.Web/Shared/SurveyPrompt.razor]

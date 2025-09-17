@@ -10,3 +10,4 @@ C:\Users\dihba\Desktop\Coptis\src\CosmenticFormulaApp.Domain\obj\Debug\net8.0\Co
 C:\Users\dihba\Desktop\Coptis\src\CosmenticFormulaApp.Domain\obj\Debug\net8.0\refint\CosmenticFormulaApp.Domain.dll
 C:\Users\dihba\Desktop\Coptis\src\CosmenticFormulaApp.Domain\obj\Debug\net8.0\CosmenticFormulaApp.Domain.pdb
 C:\Users\dihba\Desktop\Coptis\src\CosmenticFormulaApp.Domain\obj\Debug\net8.0\ref\CosmenticFormulaApp.Domain.dll
+C:\Users\dihba\Desktop\Coptis\src\CosmenticFormulaApp.Domain\obj\Debug\net8.0\CosmenticFormulaApp.Domain.sourcelink.json

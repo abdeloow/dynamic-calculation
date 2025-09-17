@@ -1,24 +1,24 @@
-# Ignore build directories
+# Ignore bin and obj directories
 bin/
 obj/
 
-# Ignore user-specific files
-*.user
-*.suo
-
 # Ignore Visual Studio temporary files
-.vs/
-*.vs/
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
 
-# Ignore NuGet packages
-*.nupkg
-packages/
+# Ignore build results
+*.dll
+*.exe
+*.pdb
+*.app
+*.apk
+*.ipa
 
 # Ignore logs
 *.log
 
-# Ignore other artifacts
-*.dll
-*.exe
-*.pdb
-*.cache
+# Ignore other unnecessary files
+*.vs/
+*.vscode/

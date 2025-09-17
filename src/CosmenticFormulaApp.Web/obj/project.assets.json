@@ -5639,6 +5639,7 @@
       "CosmenticFormulaApp.Application >= 1.0.0",
       "CosmenticFormulaApp.Domain >= 1.0.0",
       "CosmenticFormulaApp.Infrastructure >= 1.0.0",
+      "MediatR >= 12.2.0",
       "Microsoft.AspNetCore.SignalR.Client >= 8.0.0"
     ]
   },
@@ -5704,6 +5705,10 @@
       "net8.0": {
         "targetAlias": "net8.0",
         "dependencies": {
+          "MediatR": {
+            "target": "Package",
+            "version": "[12.2.0, )"
+          },
           "Microsoft.AspNetCore.SignalR.Client": {
             "target": "Package",
             "version": "[8.0.0, )"
@@ -5728,7 +5733,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.304/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.305/PortableRuntimeIdentifierGraph.json"
       }
     }
   }

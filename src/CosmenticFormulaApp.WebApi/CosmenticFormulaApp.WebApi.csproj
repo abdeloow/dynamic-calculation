@@ -14,9 +14,6 @@
 	  <ProjectReference Include="..\src\CosmenticFormulaApp.Application\CosmenticFormulaApp.Application.csproj" />
 	  <ProjectReference Include="..\src\CosmenticFormulaApp.Domain\CosmenticFormulaApp.Domain.csproj" />
 	  <ProjectReference Include="..\src\CosmenticFormulaApp.Infrastructure\CosmenticFormulaApp.Infrastructure.csproj" />
-	  <ProjectReference Include="..\CosmenticFormulaApp.Domain\CosmenticFormulaApp.Domain.csproj" />
-	  <ProjectReference Include="..\CosmenticFormulaApp.Infrastructure\CosmenticFormulaApp.Infrastructure.csproj" />
-	  <ProjectReference Include="..\CosmenticFormulaApp.Application\CosmenticFormulaApp.Application.csproj" />
 	</ItemGroup>
 
 </Project>

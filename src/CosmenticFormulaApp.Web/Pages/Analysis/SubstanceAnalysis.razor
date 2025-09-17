@@ -1,12 +1,248 @@
 ﻿@page "/analysis"
+@using CosmenticFormulaApp.Application.DTOs.Output
+@using CosmenticFormulaApp.Application.Formulas.Queries.GetSubstanceAnalysis
+@using CosmenticFormulaApp.Domain.Enums
+@using CosmenticFormulaApp.Web.Shared.Components.Common
+@using MediatR
+@inject IMediator Mediator
+@inject INotificationService NotificationService
 
 <PageTitle>Substance Analysis - Cosmetic Formula Manager</PageTitle>
 
-<div class="container">
-    <h2>Substance Analysis</h2>
-    <div class="alert alert-info">
-        <h4>Analysis Dashboard</h4>
-        <p>Analyze substance usage across all formulas.</p>
-        <p><em>This functionality will be fully implemented once the backend is complete.</em></p>
+<div class="container-fluid">
+    <div class="d-flex justify-content-between align-items-center mb-4">
+        <h2>Substance Analysis</h2>
+        <div class="d-flex gap-2">
+            <button class="btn btn-outline-primary" @onclick="RefreshAnalysis" disabled="@isLoading">
+                <span class="oi oi-reload"></span> Refresh
+            </button>
+            <button class="btn btn-outline-success" @onclick="ExportData" disabled="@isLoading">
+                <span class="oi oi-data-transfer-download"></span> Export
+            </button>
+        </div>
     </div>
+
+    <!-- Analysis Summary Cards -->
+    @if (analysisData?.Any() == true)
+    {
+        <AnalysisSummary Data="analysisData" />
+    }
+
+    <!-- Sort and Filter Controls -->
+    <div class="row mb-3">
+        <div class="col-md-4">
+            <label class="form-label">Sort By</label>
+            <div class="btn-group w-100" role="group">
+                <input type="radio" class="btn-check" name="sortBy" id="sortWeight" value="@SortBy.TotalWeight" 
+                       checked="@(sortBy == SortBy.TotalWeight)" @onchange="OnSortByWeightChanged">
+                <label class="btn btn-outline-primary" for="sortWeight">Total Weight</label>
+
+                <input type="radio" class="btn-check" name="sortBy" id="sortCount" value="@SortBy.FormulaCount" 
+                       checked="@(sortBy == SortBy.FormulaCount)" @onchange="OnSortByCountChanged">
+                <label class="btn btn-outline-primary" for="sortCount">Formula Count</label>
+
+                <input type="radio" class="btn-check" name="sortBy" id="sortName" value="@SortBy.Name" 
+                       checked="@(sortBy == SortBy.Name)" @onchange="OnSortByNameChanged">
+                <label class="btn btn-outline-primary" for="sortName">Name</label>
+            </div>
+        </div>
+        <div class="col-md-2">
+            <label class="form-label">Order</label>
+            <select class="form-select" @onchange="OnOrderChanged">
+                <option value="false" selected="@(!ascending)">Descending</option>
+                <option value="true" selected="@ascending">Ascending</option>
+            </select>
+        </div>
+        <div class="col-md-4">
+            <SearchBox @bind-Value="searchFilter" 
+                      OnValueChanged="OnSearchChanged"
+                      Placeholder="Search substances by name..."
+                      Label="Search Substances" />
+        </div>
+        <div class="col-md-2">
+            <label class="form-label">Show Details</label>
+            <div class="form-check form-switch mt-2">
+                <input class="form-check-input" type="checkbox" id="showFormulaCount" 
+                       @bind="includeFormulaCount" @onchange="OnIncludeFormulaCountChanged">
+                <label class="form-check-label" for="showFormulaCount">
+                    Formula Count
+                </label>
+            </div>
+        </div>
+    </div>
+
+    <!-- Analysis Results -->
+    @if (isLoading)
+    {
+        <LoadingSpinner Message="Analyzing substance usage..." />
+    }
+    else if (filteredData?.Any() == true)
+    {
+        <SubstanceTable Data="filteredData" />
+        
+        <!-- Pagination Info -->
+        <div class="d-flex justify-content-between align-items-center mt-3">
+            <small class="text-muted">
+                Showing @filteredData.Count of @(analysisData?.Count ?? 0) substances
+            </small>
+            @if (analysisData?.Count > filteredData.Count)
+            {
+                <button class="btn btn-sm btn-outline-secondary" @onclick="ClearSearch">
+                    <span class="oi oi-x"></span> Clear Filter
+                </button>
+            }
+        </div>
+    }
+    else if (!string.IsNullOrEmpty(searchFilter))
+    {
+        <EmptyState Message="No substances found matching your search" 
+                   Icon="magnifying-glass" 
+                   ActionText="Clear Search"
+                   ActionHref="javascript:void(0)" />
+    }
+    else
+    {
+        <EmptyState Message="No substance data available" 
+                   Icon="beaker" 
+                   ActionText="Import Some Formulas"
+                   ActionHref="/import" />
+    }
 </div>
+
+<!-- Toast Notifications -->
+<ToastNotification />
+
+@code {
+    private List<SubstanceAnalysisDto> analysisData = new();
+    private List<SubstanceAnalysisDto> filteredData = new();
+    private bool isLoading = true;
+    private string searchFilter = "";
+    private SortBy sortBy = SortBy.TotalWeight;
+    private bool ascending = false;
+    private bool includeFormulaCount = false;
+
+    protected override async Task OnInitializedAsync()
+    {
+        await LoadAnalysisData();
+    }
+
+    private async Task LoadAnalysisData()
+    {
+        isLoading = true;
+        StateHasChanged();
+
+        try
+        {
+            var query = new GetSubstanceAnalysisQuery
+            {
+                SortBy = sortBy,
+                Ascending = ascending,
+                IncludeFormulaCount = includeFormulaCount
+            };
+
+            var result = await Mediator.Send(query);
+            
+            if (result.IsSuccess)
+            {
+                analysisData = result.Data ?? new();
+                ApplyFiltering();
+            }
+            else
+            {
+                NotificationService.ShowError("Failed to load substance analysis");
+                analysisData = new();
+                filteredData = new();
+            }
+        }
+        catch (Exception ex)
+        {
+            NotificationService.ShowError($"Error loading analysis: {ex.Message}");
+            analysisData = new();
+            filteredData = new();
+        }
+        finally
+        {
+            isLoading = false;
+            StateHasChanged();
+        }
+    }
+
+    private void ApplyFiltering()
+    {
+        filteredData = analysisData;
+        
+        if (!string.IsNullOrEmpty(searchFilter))
+        {
+            filteredData = filteredData.Where(s => 
+                s.Name.Contains(searchFilter, StringComparison.OrdinalIgnoreCase))
+                .ToList();
+        }
+    }
+
+    private async Task OnSortByWeightChanged()
+    {
+        sortBy = SortBy.TotalWeight;
+        await LoadAnalysisData();
+    }
+
+    private async Task OnSortByCountChanged()
+    {
+        sortBy = SortBy.FormulaCount;
+        await LoadAnalysisData();
+    }
+
+    private async Task OnSortByNameChanged()
+    {
+        sortBy = SortBy.Name;
+        await LoadAnalysisData();
+    }
+
+    private async Task OnOrderChanged(ChangeEventArgs e)
+    {
+        ascending = bool.Parse(e.Value?.ToString() ?? "false");
+        await LoadAnalysisData();
+    }
+
+    private async Task OnIncludeFormulaCountChanged()
+    {
+        await LoadAnalysisData();
+    }
+
+    private async Task OnSearchChanged()
+    {
+        ApplyFiltering();
+        StateHasChanged();
+    }
+
+    private void ClearSearch()
+    {
+        searchFilter = "";
+        ApplyFiltering();
+        StateHasChanged();
+    }
+
+    private async Task RefreshAnalysis()
+    {
+        await LoadAnalysisData();
+        NotificationService.ShowInfo("Analysis data refreshed");
+    }
+
+    private async Task ExportData()
+    {
+        try
+        {
+            // For now, just show a notification
+            // In a real implementation, this would generate and download a file
+            NotificationService.ShowInfo("Export functionality will be implemented soon");
+            
+            // Future implementation could:
+            // 1. Generate CSV/Excel file from filteredData
+            // 2. Use JS interop to trigger download
+            // 3. Or send data to server for processing
+        }
+        catch (Exception ex)
+        {
+            NotificationService.ShowError($"Export failed: {ex.Message}");
+        }
+    }
+}

@@ -1,4 +1,7 @@
-﻿<div class="drop-zone @GetDropZoneClass()"
+﻿@using Microsoft.AspNetCore.Components.Forms
+@inject IJSRuntime JSRuntime
+
+<div class="drop-zone @GetDropZoneClass()"
      @ondragover="HandleDragOver"
      @ondragover:preventDefault="true"
      @ondrop="HandleDrop"
@@ -9,16 +12,16 @@
     <div class="drop-zone-content">
         @if (isDragOver)
         {
-            <div class="drag-indicator">
-                <span class="oi oi-cloud-upload drag-icon"></span>
-                <p class="fw-bold">Drop files here</p>
+            <div class="drag-indicator text-center">
+                <span class="oi oi-cloud-upload drag-icon display-4 text-primary"></span>
+                <p class="fw-bold mt-2">Drop files here</p>
             </div>
         }
         else
         {
-            <div class="upload-prompt">
-                <span class="oi oi-cloud-upload upload-icon"></span>
-                <h4>Drop JSON files here</h4>
+            <div class="upload-prompt text-center">
+                <span class="oi oi-cloud-upload upload-icon display-4 text-muted"></span>
+                <h4 class="mt-3">Drop JSON files here</h4>
                 <p>or <button type="button" class="btn btn-link p-0" @onclick="TriggerFileInput">browse files</button></p>
                 <small class="text-muted">Accepts: @AcceptedTypes @(AllowMultiple ? "(multiple files allowed)" : "")</small>
             </div>
@@ -32,10 +35,48 @@
                style="display: none;" />
 </div>
 
+<style>
+    .drop-zone {
+        border: 2px dashed #dee2e6;
+        border-radius: 8px;
+        padding: 3rem 2rem;
+        background-color: #f8f9fa;
+        transition: all 0.3s ease;
+        cursor: pointer;
+        min-height: 200px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+        .drop-zone.drag-over {
+            border-color: #0d6efd;
+            background-color: #e7f3ff;
+            transform: scale(1.02);
+        }
+
+        .drop-zone:hover:not(.drag-over) {
+            border-color: #adb5bd;
+            background-color: #e9ecef;
+        }
+
+    .drag-icon, .upload-icon {
+        transition: transform 0.3s ease;
+    }
+
+    .drop-zone.drag-over .drag-icon {
+        transform: scale(1.2);
+    }
+
+    .drop-zone-content {
+        width: 100%;
+    }
+</style>
+
 @code {
-    [Parameter] public EventCallback<List<FileInfo>> OnFilesSelected { get; set; }
+    [Parameter] public EventCallback<List<IBrowserFile>> OnFilesSelected { get; set; }
     [Parameter] public bool AllowMultiple { get; set; } = false;
-    [Parameter] public string AcceptedTypes { get; set; } = "*";
+    [Parameter] public string AcceptedTypes { get; set; } = ".json";
 
     private InputFile fileInput = new();
     private bool isDragOver = false;
@@ -53,31 +94,34 @@
     private void HandleDragEnter(DragEventArgs e)
     {
         isDragOver = true;
+        StateHasChanged();
     }
 
     private void HandleDragLeave(DragEventArgs e)
     {
         isDragOver = false;
+        StateHasChanged();
     }
 
     private async Task HandleDrop(DragEventArgs e)
     {
         isDragOver = false;
+        StateHasChanged();
 
-        // Note: In Blazor Server, drag-drop file access is limited
-        // This is a simplified implementation
-        NotificationService?.ShowInfo("Please use the browse button to select files");
+        // Note: In Blazor Server, direct drag-drop file access is limited
+        // This implementation focuses on the visual feedback
+        // Users should use the browse button for actual file selection
+        await JSRuntime.InvokeVoidAsync("triggerFileInput");
     }
 
-    private void TriggerFileInput()
+    private async Task TriggerFileInput()
     {
-        // Use JS interop to trigger file input
-        JSRuntime.InvokeVoidAsync("triggerFileInput");
+        await JSRuntime.InvokeVoidAsync("triggerFileInput");
     }
 
     private async Task HandleFileInput(InputFileChangeEventArgs e)
     {
-        var files = new List<FileInfo>();
+        var files = new List<IBrowserFile>();
 
         var maxFiles = AllowMultiple ? 10 : 1;
         var selectedFiles = e.GetMultipleFiles(maxFiles);
@@ -86,7 +130,7 @@
         {
             if (IsValidFileType(file.Name))
             {
-                files.Add(new FileInfo { Name = file.Name, Size = file.Size });
+                files.Add(file);
             }
         }
 
@@ -104,9 +148,11 @@
         return AcceptedTypes.Split(',').Any(type => type.Trim() == extension);
     }
 
-    public class FileInfo
+    protected override async Task OnAfterRenderAsync(bool firstRender)
     {
-        public string Name { get; set; } = "";
-        public long Size { get; set; }
+        if (firstRender)
+        {
+            await JSRuntime.InvokeVoidAsync("initializeFileUpload", fileInput.Element);
+        }
     }
 }

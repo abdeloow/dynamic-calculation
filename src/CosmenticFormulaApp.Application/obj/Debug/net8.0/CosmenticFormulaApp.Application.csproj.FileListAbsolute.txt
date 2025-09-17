@@ -13,3 +13,4 @@ C:\Users\dihba\Desktop\Coptis\src\CosmenticFormulaApp.Application\obj\Debug\net8
 C:\Users\dihba\Desktop\Coptis\src\CosmenticFormulaApp.Application\obj\Debug\net8.0\refint\CosmenticFormulaApp.Application.dll
 C:\Users\dihba\Desktop\Coptis\src\CosmenticFormulaApp.Application\obj\Debug\net8.0\CosmenticFormulaApp.Application.pdb
 C:\Users\dihba\Desktop\Coptis\src\CosmenticFormulaApp.Application\obj\Debug\net8.0\ref\CosmenticFormulaApp.Application.dll
+C:\Users\dihba\Desktop\Coptis\src\CosmenticFormulaApp.Application\obj\Debug\net8.0\CosmenticFormulaApp.Application.sourcelink.json

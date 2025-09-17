@@ -1,6 +1,7 @@
 using CosmenticFormulaApp.Application;
 using CosmenticFormulaApp.Infrastructure;
 using CosmenticFormulaApp.Web.Services;
+using CosmenticFormulaApp.Web.Hubs;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -14,6 +15,8 @@ builder.Services.AddInfrastructure(builder.Configuration);
 
 // Add web services
 builder.Services.AddScoped<INotificationService, NotificationService>();
+builder.Services.AddScoped<IFileUploadService, FileUploadService>();
+builder.Services.AddScoped<IUIStateService, UIStateService>();
 
 // Add SignalR
 builder.Services.AddSignalR();
@@ -33,6 +36,7 @@ app.UseRouting();
 
 app.MapRazorPages();
 app.MapBlazorHub();
+app.MapHub<FormulaUpdateHub>("/formulaUpdateHub");
 app.MapFallbackToPage("/_Host");
 
 app.Run();

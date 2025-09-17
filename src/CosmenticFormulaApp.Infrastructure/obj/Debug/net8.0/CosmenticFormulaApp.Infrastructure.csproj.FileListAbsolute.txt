@@ -17,3 +17,4 @@ C:\Users\dihba\Desktop\Coptis\src\CosmenticFormulaApp.Infrastructure\obj\Debug\n
 C:\Users\dihba\Desktop\Coptis\src\CosmenticFormulaApp.Infrastructure\obj\Debug\net8.0\CosmenticFormulaApp.Infrastructure.pdb
 C:\Users\dihba\Desktop\Coptis\src\CosmenticFormulaApp.Infrastructure\obj\Debug\net8.0\CosmenticFormulaApp.Infrastructure.genruntimeconfig.cache
 C:\Users\dihba\Desktop\Coptis\src\CosmenticFormulaApp.Infrastructure\obj\Debug\net8.0\ref\CosmenticFormulaApp.Infrastructure.dll
+C:\Users\dihba\Desktop\Coptis\src\CosmenticFormulaApp.Infrastructure\obj\Debug\net8.0\CosmenticFormulaApp.Infrastructure.sourcelink.json

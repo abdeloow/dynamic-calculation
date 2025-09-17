@@ -1,12 +1,330 @@
 ﻿@page "/import"
+@using CosmenticFormulaApp.Application.Formulas.Commands.ImportFormula
+@using CosmenticFormulaApp.Web.Services
+@using CosmenticFormulaApp.Web.Models
+@using CosmenticFormulaApp.Web.Shared.Components.Common
+@using CosmenticFormulaApp.Domain.Enums
+@using MediatR
+@inject IMediator Mediator
+@inject INotificationService NotificationService
 
 <PageTitle>Import Formula - Cosmetic Formula Manager</PageTitle>
 
 <div class="container">
-    <h2>Import Formula</h2>
-    <div class="alert alert-info">
-        <h4>File Import</h4>
-        <p>Upload JSON files to import new cosmetic formulas.</p>
-        <p><em>This functionality will be fully implemented once the backend is complete.</em></p>
+    <div class="d-flex justify-content-between align-items-center mb-4">
+        <h2>Import Formula</h2>
+        <NavLink href="/formulas" class="btn btn-outline-secondary">
+            <span class="oi oi-arrow-left"></span> Back to Formulas
+        </NavLink>
+    </div>
+
+    <div class="row">
+        <div class="col-lg-8">
+            <!-- File Upload Section -->
+            <div class="card mb-4">
+                <div class="card-header">
+                    <h5 class="mb-0">
+                        <span class="oi oi-cloud-upload me-2"></span>
+                        Upload JSON Files
+                    </h5>
+                </div>
+                <div class="card-body">
+                    @if (!isUploading)
+                    {
+                        <DropZone OnFilesSelected="HandleFilesSelected" 
+                                 AllowMultiple="true" 
+                                 AcceptedTypes=".json" />
+                    }
+                    else
+                    {
+                        <div class="text-center py-4">
+                            <LoadingSpinner Message="Processing files..." />
+                        </div>
+                    }
+
+                    @if (selectedFiles.Any())
+                    {
+                        <div class="mt-3">
+                            <h6>Selected Files:</h6>
+                            <ul class="list-group">
+                                @foreach (var file in selectedFiles)
+                                {
+                                    <li class="list-group-item d-flex justify-content-between align-items-center">
+                                        <div>
+                                            <strong>@file.Name</strong>
+                                            <br>
+                                            <small class="text-muted">@GetFileSize(file.Size)</small>
+                                        </div>
+                                        <button class="btn btn-sm btn-outline-danger" 
+                                               @onclick="() => RemoveFile(file)">
+                                            <span class="oi oi-x"></span>
+                                        </button>
+                                    </li>
+                                }
+                            </ul>
+                            
+                            <div class="mt-3">
+                                <button class="btn btn-primary" 
+                                       @onclick="ProcessSelectedFiles" 
+                                       disabled="@isUploading">
+                                    <span class="oi oi-cloud-upload me-2"></span>
+                                    Import @selectedFiles.Count File@(selectedFiles.Count == 1 ? "" : "s")
+                                </button>
+                                <button class="btn btn-outline-secondary ms-2" 
+                                       @onclick="ClearSelectedFiles">
+                                    Clear All
+                                </button>
+                            </div>
+                        </div>
+                    }
+                </div>
+            </div>
+
+            <!-- Import Results -->
+            @if (importResults.Any())
+            {
+                <ImportResults Results="importResults" OnClear="ClearResults" />
+            }
+        </div>
+
+        <div class="col-lg-4">
+            <!-- Instructions Panel -->
+            <div class="card">
+                <div class="card-header">
+                    <h5 class="mb-0">
+                        <span class="oi oi-info me-2"></span>
+                        Import Instructions
+                    </h5>
+                </div>
+                <div class="card-body">
+                    <h6>File Format</h6>
+                    <p>Upload JSON files containing formula data. Each file should contain:</p>
+                    <ul>
+                        <li>Formula name and weight</li>
+                        <li>Raw materials with percentages</li>
+                        <li>Substance compositions</li>
+                        <li>Price information</li>
+                    </ul>
+
+                    <h6 class="mt-3">File Requirements</h6>
+                    <ul>
+                        <li>File type: .json only</li>
+                        <li>Maximum size: 5MB per file</li>
+                        <li>Multiple files allowed</li>
+                        <li>UTF-8 encoding recommended</li>
+                    </ul>
+
+                    <div class="mt-3">
+                        <button class="btn btn-outline-info btn-sm" @onclick="ShowSampleData">
+                            <span class="oi oi-document me-1"></span>
+                            View Sample Format
+                        </button>
+                    </div>
+
+                    @if (showSample)
+                    {
+                        <div class="mt-3">
+                            <h6>Sample JSON Structure:</h6>
+                            <pre class="bg-light p-2 rounded" style="font-size: 0.8em; overflow-x: auto;">@sampleJson</pre>
+                        </div>
+                    }
+                </div>
+            </div>
+
+            <!-- Quick Stats -->
+            @if (importResults.Any())
+            {
+                <div class="card mt-3">
+                    <div class="card-header">
+                        <h5 class="mb-0">Import Summary</h5>
+                    </div>
+                    <div class="card-body">
+                        <div class="row text-center">
+                            <div class="col-6">
+                                <div class="text-success">
+                                    <h4>@importResults.Count(r => r.Success)</h4>
+                                    <small>Successful</small>
+                                </div>
+                            </div>
+                            <div class="col-6">
+                                <div class="text-danger">
+                                    <h4>@importResults.Count(r => !r.Success)</h4>
+                                    <small>Failed</small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            }
+        </div>
     </div>
 </div>
+
+<!-- Toast Notifications -->
+<ToastNotification />
+
+@code {
+    private List<IBrowserFile> selectedFiles = new();
+    private List<CosmenticFormulaApp.Web.Models.ImportResult> importResults = new();
+    private bool isUploading = false;
+    private bool showSample = false;
+
+    private readonly string sampleJson = @"{
+  ""name"": ""CitralSoap"",
+  ""weight"": 500,
+  ""weightUnit"": ""g"",
+  ""rawMaterials"": [
+    {
+      ""name"": ""CitralEssence"",
+      ""percentage"": 10,
+      ""price"": {
+        ""amount"": 100,
+        ""currency"": ""EUR"",
+        ""referenceUnit"": ""kg""
+      },
+      ""substances"": [
+        {
+          ""name"": ""Citral"",
+          ""percentage"": 30
+        }
+      ]
+    }
+  ]
+}";
+
+    private async Task HandleFilesSelected(List<IBrowserFile> files)
+    {
+        // Add new files to selected files list
+        foreach (var file in files)
+        {
+            if (!selectedFiles.Any(f => f.Name == file.Name))
+            {
+                selectedFiles.Add(file);
+            }
+        }
+        StateHasChanged();
+    }
+
+    private void RemoveFile(IBrowserFile file)
+    {
+        selectedFiles.Remove(file);
+        StateHasChanged();
+    }
+
+    private void ClearSelectedFiles()
+    {
+        selectedFiles.Clear();
+        StateHasChanged();
+    }
+
+    private async Task ProcessSelectedFiles()
+    {
+        if (!selectedFiles.Any()) return;
+
+        isUploading = true;
+        StateHasChanged();
+
+        try
+        {
+            // Process files through upload service
+            var uploadResults = await FileUploadService.ProcessFilesAsync(selectedFiles.ToList());
+            
+            // Import each successfully uploaded file
+            foreach (var uploadResult in uploadResults)
+            {
+                if (uploadResult.Success)
+                {
+                    await ImportFormula(uploadResult);
+                }
+                else
+                {
+                    importResults.Add(new CosmenticFormulaApp.Web.Models.ImportResult
+                    {
+                        FileName = uploadResult.FileName,
+                        Success = false,
+                        Message = uploadResult.Message
+                    });
+                }
+            }
+
+            // Clear selected files after processing
+            selectedFiles.Clear();
+
+            var successCount = importResults.Count(r => r.Success);
+            var totalCount = importResults.Count;
+            
+            if (successCount == totalCount)
+            {
+                NotificationService.ShowSuccess($"All {successCount} file(s) imported successfully!");
+            }
+            else if (successCount > 0)
+            {
+                NotificationService.ShowWarning($"{successCount} of {totalCount} file(s) imported successfully.");
+            }
+            else
+            {
+                NotificationService.ShowError("No files were imported successfully.");
+            }
+        }
+        catch (Exception ex)
+        {
+            NotificationService.ShowError($"Error processing files: {ex.Message}");
+        }
+        finally
+        {
+            isUploading = false;
+            StateHasChanged();
+        }
+    }
+
+    private async Task ImportFormula(UploadResult uploadResult)
+    {
+        try
+        {
+            var command = new ImportFormulaCommand
+            {
+                JsonContent = uploadResult.Content,
+                FileName = uploadResult.FileName,
+                Source = ImportSource.Manual
+            };
+
+            var result = await Mediator.Send(command);
+
+            importResults.Add(new CosmenticFormulaApp.Web.Models.ImportResult
+            {
+                FileName = uploadResult.FileName,
+                Success = result.IsSuccess,
+                Message = result.IsSuccess 
+                    ? $"Formula imported successfully (ID: {result.Data})" 
+                    : result.Error
+            });
+        }
+        catch (Exception ex)
+        {
+            importResults.Add(new CosmenticFormulaApp.Web.Models.ImportResult
+            {
+                FileName = uploadResult.FileName,
+                Success = false,
+                Message = $"Import failed: {ex.Message}"
+            });
+        }
+    }
+
+    private void ShowSampleData()
+    {
+        showSample = !showSample;
+    }
+
+    private void ClearResults()
+    {
+        importResults.Clear();
+        StateHasChanged();
+    }
+
+    private static string GetFileSize(long bytes)
+    {
+        if (bytes < 1024) return $"{bytes} B";
+        if (bytes < 1024 * 1024) return $"{bytes / 1024:F1} KB";
+        return $"{bytes / (1024 * 1024):F1} MB";
+    }
+}

@@ -96,3 +96,4 @@ C:\Users\dihba\Desktop\Coptis\tests\CosmenticFormulaApp.Application.Tests\obj\De
 C:\Users\dihba\Desktop\Coptis\tests\CosmenticFormulaApp.Application.Tests\obj\Debug\net9.0\CosmenticFormulaApp.Application.Tests.pdb
 C:\Users\dihba\Desktop\Coptis\tests\CosmenticFormulaApp.Application.Tests\obj\Debug\net9.0\CosmenticFormulaApp.Application.Tests.genruntimeconfig.cache
 C:\Users\dihba\Desktop\Coptis\tests\CosmenticFormulaApp.Application.Tests\obj\Debug\net9.0\ref\CosmenticFormulaApp.Application.Tests.dll
+C:\Users\dihba\Desktop\Coptis\tests\CosmenticFormulaApp.Application.Tests\obj\Debug\net9.0\CosmenticFormulaApp.Application.Tests.sourcelink.json
