@@ -3,20 +3,72 @@
   "WorkspaceRootPath": "C:\\Users\\dihba\\Desktop\\Coptis\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{00E3B6FE-4D24-4648-9FF3-382BC23FBAA4}|src\\CosmenticFormulaApp.WebApi\\CosmenticFormulaApp.WebApi.csproj|c:\\users\\dihba\\desktop\\coptis\\src\\cosmenticformulaapp.webapi\\cosmenticformulaapp.webapi.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
-      "RelativeMoniker": "D:0:0:{00E3B6FE-4D24-4648-9FF3-382BC23FBAA4}|src\\CosmenticFormulaApp.WebApi\\CosmenticFormulaApp.WebApi.csproj|solutionrelative:src\\cosmenticformulaapp.webapi\\cosmenticformulaapp.webapi.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+      "AbsoluteMoniker": "D:0:0:{55D483BB-A7F5-442A-9BAC-201E9FD4C055}|src\\CosmenticFormulaApp.Web\\CosmenticFormulaApp.Web.csproj|c:\\users\\dihba\\desktop\\coptis\\src\\cosmenticformulaapp.web\\wwwroot\\js\\app.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{55D483BB-A7F5-442A-9BAC-201E9FD4C055}|src\\CosmenticFormulaApp.Web\\CosmenticFormulaApp.Web.csproj|solutionrelative:src\\cosmenticformulaapp.web\\wwwroot\\js\\app.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{55D483BB-A7F5-442A-9BAC-201E9FD4C055}|src\\CosmenticFormulaApp.Web\\CosmenticFormulaApp.Web.csproj|c:\\users\\dihba\\desktop\\coptis\\src\\cosmenticformulaapp.web\\pages\\analysis\\substanceanalysis.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{55D483BB-A7F5-442A-9BAC-201E9FD4C055}|src\\CosmenticFormulaApp.Web\\CosmenticFormulaApp.Web.csproj|solutionrelative:src\\cosmenticformulaapp.web\\pages\\analysis\\substanceanalysis.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{55D483BB-A7F5-442A-9BAC-201E9FD4C055}|src\\CosmenticFormulaApp.Web\\CosmenticFormulaApp.Web.csproj|c:\\users\\dihba\\desktop\\coptis\\src\\cosmenticformulaapp.web\\pages\\import\\components\\importresults.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{55D483BB-A7F5-442A-9BAC-201E9FD4C055}|src\\CosmenticFormulaApp.Web\\CosmenticFormulaApp.Web.csproj|solutionrelative:src\\cosmenticformulaapp.web\\pages\\import\\components\\importresults.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{55D483BB-A7F5-442A-9BAC-201E9FD4C055}|src\\CosmenticFormulaApp.Web\\CosmenticFormulaApp.Web.csproj|c:\\users\\dihba\\desktop\\coptis\\src\\cosmenticformulaapp.web\\pages\\import\\manualimport.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{55D483BB-A7F5-442A-9BAC-201E9FD4C055}|src\\CosmenticFormulaApp.Web\\CosmenticFormulaApp.Web.csproj|solutionrelative:src\\cosmenticformulaapp.web\\pages\\import\\manualimport.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{55D483BB-A7F5-442A-9BAC-201E9FD4C055}|src\\CosmenticFormulaApp.Web\\CosmenticFormulaApp.Web.csproj|c:\\users\\dihba\\desktop\\coptis\\src\\cosmenticformulaapp.web\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{55D483BB-A7F5-442A-9BAC-201E9FD4C055}|src\\CosmenticFormulaApp.Web\\CosmenticFormulaApp.Web.csproj|solutionrelative:src\\cosmenticformulaapp.web\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{55D483BB-A7F5-442A-9BAC-201E9FD4C055}|src\\CosmenticFormulaApp.Web\\CosmenticFormulaApp.Web.csproj|c:\\users\\dihba\\desktop\\coptis\\src\\cosmenticformulaapp.web\\services\\fileuploadservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{55D483BB-A7F5-442A-9BAC-201E9FD4C055}|src\\CosmenticFormulaApp.Web\\CosmenticFormulaApp.Web.csproj|solutionrelative:src\\cosmenticformulaapp.web\\services\\fileuploadservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{55D483BB-A7F5-442A-9BAC-201E9FD4C055}|src\\CosmenticFormulaApp.Web\\CosmenticFormulaApp.Web.csproj|c:\\users\\dihba\\desktop\\coptis\\src\\cosmenticformulaapp.web\\services\\ifileuploadservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{55D483BB-A7F5-442A-9BAC-201E9FD4C055}|src\\CosmenticFormulaApp.Web\\CosmenticFormulaApp.Web.csproj|solutionrelative:src\\cosmenticformulaapp.web\\services\\ifileuploadservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{55D483BB-A7F5-442A-9BAC-201E9FD4C055}|src\\CosmenticFormulaApp.Web\\CosmenticFormulaApp.Web.csproj|c:\\users\\dihba\\desktop\\coptis\\src\\cosmenticformulaapp.web\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{55D483BB-A7F5-442A-9BAC-201E9FD4C055}|src\\CosmenticFormulaApp.Web\\CosmenticFormulaApp.Web.csproj|solutionrelative:src\\cosmenticformulaapp.web\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{55D483BB-A7F5-442A-9BAC-201E9FD4C055}|src\\CosmenticFormulaApp.Web\\CosmenticFormulaApp.Web.csproj|c:\\users\\dihba\\desktop\\coptis\\src\\cosmenticformulaapp.web\\shared\\components\\common\\dropzone.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{55D483BB-A7F5-442A-9BAC-201E9FD4C055}|src\\CosmenticFormulaApp.Web\\CosmenticFormulaApp.Web.csproj|solutionrelative:src\\cosmenticformulaapp.web\\shared\\components\\common\\dropzone.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{55D483BB-A7F5-442A-9BAC-201E9FD4C055}|src\\CosmenticFormulaApp.Web\\CosmenticFormulaApp.Web.csproj|c:\\users\\dihba\\desktop\\coptis\\src\\cosmenticformulaapp.web\\wwwroot\\css\\app.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{55D483BB-A7F5-442A-9BAC-201E9FD4C055}|src\\CosmenticFormulaApp.Web\\CosmenticFormulaApp.Web.csproj|solutionrelative:src\\cosmenticformulaapp.web\\wwwroot\\css\\app.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{55D483BB-A7F5-442A-9BAC-201E9FD4C055}|src\\CosmenticFormulaApp.Web\\CosmenticFormulaApp.Web.csproj|c:\\users\\dihba\\desktop\\coptis\\src\\cosmenticformulaapp.web\\wwwroot\\css\\site.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{55D483BB-A7F5-442A-9BAC-201E9FD4C055}|src\\CosmenticFormulaApp.Web\\CosmenticFormulaApp.Web.csproj|solutionrelative:src\\cosmenticformulaapp.web\\wwwroot\\css\\site.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6AB02130-FAFB-4CF5-8796-3AE4AEAB1FA5}|tests\\CosmenticFormulaApp.Web.Tests\\CosmenticFormulaApp.Web.Tests.csproj|c:\\users\\dihba\\desktop\\coptis\\tests\\cosmenticformulaapp.web.tests\\cosmenticformulaapp.web.tests.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{6AB02130-FAFB-4CF5-8796-3AE4AEAB1FA5}|tests\\CosmenticFormulaApp.Web.Tests\\CosmenticFormulaApp.Web.Tests.csproj|solutionrelative:tests\\cosmenticformulaapp.web.tests\\cosmenticformulaapp.web.tests.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{55D483BB-A7F5-442A-9BAC-201E9FD4C055}|src\\CosmenticFormulaApp.Web\\CosmenticFormulaApp.Web.csproj|c:\\users\\dihba\\desktop\\coptis\\src\\cosmenticformulaapp.web\\shared\\mainlayout.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{55D483BB-A7F5-442A-9BAC-201E9FD4C055}|src\\CosmenticFormulaApp.Web\\CosmenticFormulaApp.Web.csproj|solutionrelative:src\\cosmenticformulaapp.web\\shared\\mainlayout.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{55D483BB-A7F5-442A-9BAC-201E9FD4C055}|src\\CosmenticFormulaApp.Web\\CosmenticFormulaApp.Web.csproj|c:\\users\\dihba\\desktop\\coptis\\src\\cosmenticformulaapp.web\\shared\\components\\formularow.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{55D483BB-A7F5-442A-9BAC-201E9FD4C055}|src\\CosmenticFormulaApp.Web\\CosmenticFormulaApp.Web.csproj|solutionrelative:src\\cosmenticformulaapp.web\\shared\\components\\formularow.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{55D483BB-A7F5-442A-9BAC-201E9FD4C055}|src\\CosmenticFormulaApp.Web\\CosmenticFormulaApp.Web.csproj|c:\\users\\dihba\\desktop\\coptis\\src\\cosmenticformulaapp.web\\pages\\import\\manualimport.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{55D483BB-A7F5-442A-9BAC-201E9FD4C055}|src\\CosmenticFormulaApp.Web\\CosmenticFormulaApp.Web.csproj|solutionrelative:src\\cosmenticformulaapp.web\\pages\\import\\manualimport.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{55D483BB-A7F5-442A-9BAC-201E9FD4C055}|src\\CosmenticFormulaApp.Web\\CosmenticFormulaApp.Web.csproj|c:\\users\\dihba\\desktop\\coptis\\src\\cosmenticformulaapp.web\\pages\\analysis\\substanceanalysis.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{55D483BB-A7F5-442A-9BAC-201E9FD4C055}|src\\CosmenticFormulaApp.Web\\CosmenticFormulaApp.Web.csproj|solutionrelative:src\\cosmenticformulaapp.web\\pages\\analysis\\substanceanalysis.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{55D483BB-A7F5-442A-9BAC-201E9FD4C055}|src\\CosmenticFormulaApp.Web\\CosmenticFormulaApp.Web.csproj|c:\\users\\dihba\\desktop\\coptis\\src\\cosmenticformulaapp.web\\pages\\analysis\\components\\analysissummary.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{55D483BB-A7F5-442A-9BAC-201E9FD4C055}|src\\CosmenticFormulaApp.Web\\CosmenticFormulaApp.Web.csproj|solutionrelative:src\\cosmenticformulaapp.web\\pages\\analysis\\components\\analysissummary.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{55D483BB-A7F5-442A-9BAC-201E9FD4C055}|src\\CosmenticFormulaApp.Web\\CosmenticFormulaApp.Web.csproj|c:\\users\\dihba\\desktop\\coptis\\src\\cosmenticformulaapp.web\\services\\uistateservice .cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{55D483BB-A7F5-442A-9BAC-201E9FD4C055}|src\\CosmenticFormulaApp.Web\\CosmenticFormulaApp.Web.csproj|solutionrelative:src\\cosmenticformulaapp.web\\services\\uistateservice .cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{55D483BB-A7F5-442A-9BAC-201E9FD4C055}|src\\CosmenticFormulaApp.Web\\CosmenticFormulaApp.Web.csproj|c:\\users\\dihba\\desktop\\coptis\\src\\cosmenticformulaapp.web\\services\\iuistateservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{55D483BB-A7F5-442A-9BAC-201E9FD4C055}|src\\CosmenticFormulaApp.Web\\CosmenticFormulaApp.Web.csproj|solutionrelative:src\\cosmenticformulaapp.web\\services\\iuistateservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{55D483BB-A7F5-442A-9BAC-201E9FD4C055}|src\\CosmenticFormulaApp.Web\\CosmenticFormulaApp.Web.csproj|c:\\users\\dihba\\desktop\\coptis\\src\\cosmenticformulaapp.web\\shared\\components\\formulatable.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
@@ -25,14 +77,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{55D483BB-A7F5-442A-9BAC-201E9FD4C055}|src\\CosmenticFormulaApp.Web\\CosmenticFormulaApp.Web.csproj|c:\\users\\dihba\\desktop\\coptis\\src\\cosmenticformulaapp.web\\pages\\analysis\\components\\substancetable.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{55D483BB-A7F5-442A-9BAC-201E9FD4C055}|src\\CosmenticFormulaApp.Web\\CosmenticFormulaApp.Web.csproj|solutionrelative:src\\cosmenticformulaapp.web\\pages\\analysis\\components\\substancetable.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{55D483BB-A7F5-442A-9BAC-201E9FD4C055}|src\\CosmenticFormulaApp.Web\\CosmenticFormulaApp.Web.csproj|c:\\users\\dihba\\desktop\\coptis\\src\\cosmenticformulaapp.web\\pages\\analysis\\components\\analysissummary.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{55D483BB-A7F5-442A-9BAC-201E9FD4C055}|src\\CosmenticFormulaApp.Web\\CosmenticFormulaApp.Web.csproj|solutionrelative:src\\cosmenticformulaapp.web\\pages\\analysis\\components\\analysissummary.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{55D483BB-A7F5-442A-9BAC-201E9FD4C055}|src\\CosmenticFormulaApp.Web\\CosmenticFormulaApp.Web.csproj|c:\\users\\dihba\\desktop\\coptis\\src\\cosmenticformulaapp.web\\pages\\import\\components\\importresults.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{55D483BB-A7F5-442A-9BAC-201E9FD4C055}|src\\CosmenticFormulaApp.Web\\CosmenticFormulaApp.Web.csproj|solutionrelative:src\\cosmenticformulaapp.web\\pages\\import\\components\\importresults.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{55D483BB-A7F5-442A-9BAC-201E9FD4C055}|src\\CosmenticFormulaApp.Web\\CosmenticFormulaApp.Web.csproj|c:\\users\\dihba\\desktop\\coptis\\src\\cosmenticformulaapp.web\\pages\\rawmaterials\\rawmaterialslist.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
@@ -47,16 +91,8 @@
       "RelativeMoniker": "D:0:0:{55D483BB-A7F5-442A-9BAC-201E9FD4C055}|src\\CosmenticFormulaApp.Web\\CosmenticFormulaApp.Web.csproj|solutionrelative:src\\cosmenticformulaapp.web\\services\\signalrservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{55D483BB-A7F5-442A-9BAC-201E9FD4C055}|src\\CosmenticFormulaApp.Web\\CosmenticFormulaApp.Web.csproj|c:\\users\\dihba\\desktop\\coptis\\src\\cosmenticformulaapp.web\\shared\\components\\common\\dropzone.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{55D483BB-A7F5-442A-9BAC-201E9FD4C055}|src\\CosmenticFormulaApp.Web\\CosmenticFormulaApp.Web.csproj|solutionrelative:src\\cosmenticformulaapp.web\\shared\\components\\common\\dropzone.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{55D483BB-A7F5-442A-9BAC-201E9FD4C055}|src\\CosmenticFormulaApp.Web\\CosmenticFormulaApp.Web.csproj|c:\\users\\dihba\\desktop\\coptis\\src\\cosmenticformulaapp.web\\_imports.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{55D483BB-A7F5-442A-9BAC-201E9FD4C055}|src\\CosmenticFormulaApp.Web\\CosmenticFormulaApp.Web.csproj|solutionrelative:src\\cosmenticformulaapp.web\\_imports.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{55D483BB-A7F5-442A-9BAC-201E9FD4C055}|src\\CosmenticFormulaApp.Web\\CosmenticFormulaApp.Web.csproj|c:\\users\\dihba\\desktop\\coptis\\src\\cosmenticformulaapp.web\\shared\\mainlayout.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{55D483BB-A7F5-442A-9BAC-201E9FD4C055}|src\\CosmenticFormulaApp.Web\\CosmenticFormulaApp.Web.csproj|solutionrelative:src\\cosmenticformulaapp.web\\shared\\mainlayout.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{55D483BB-A7F5-442A-9BAC-201E9FD4C055}|src\\CosmenticFormulaApp.Web\\CosmenticFormulaApp.Web.csproj|c:\\users\\dihba\\desktop\\coptis\\src\\cosmenticformulaapp.web\\pages\\formulas\\formulalist.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
@@ -87,20 +123,12 @@
       "RelativeMoniker": "D:0:0:{34A65F66-CF28-4A09-866F-F156E3FC9B5A}|src\\CosmenticFormulaApp.Infrastructure\\CosmenticFormulaApp.Infrastructure.csproj|solutionrelative:src\\cosmenticformulaapp.infrastructure\\cosmenticformulaapp.infrastructure.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{55D483BB-A7F5-442A-9BAC-201E9FD4C055}|src\\CosmenticFormulaApp.Web\\CosmenticFormulaApp.Web.csproj|c:\\users\\dihba\\desktop\\coptis\\src\\cosmenticformulaapp.web\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{55D483BB-A7F5-442A-9BAC-201E9FD4C055}|src\\CosmenticFormulaApp.Web\\CosmenticFormulaApp.Web.csproj|solutionrelative:src\\cosmenticformulaapp.web\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{55D483BB-A7F5-442A-9BAC-201E9FD4C055}|src\\CosmenticFormulaApp.Web\\CosmenticFormulaApp.Web.csproj|c:\\users\\dihba\\desktop\\coptis\\src\\cosmenticformulaapp.web\\shared\\components\\common\\toastnotification.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{55D483BB-A7F5-442A-9BAC-201E9FD4C055}|src\\CosmenticFormulaApp.Web\\CosmenticFormulaApp.Web.csproj|solutionrelative:src\\cosmenticformulaapp.web\\shared\\components\\common\\toastnotification.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\dihba\\Desktop\\Coptis\\CosmenticFormulaApp.WebApi\\Controllers\\FormulasController.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:CosmenticFormulaApp.WebApi\\Controllers\\FormulasController.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{55D483BB-A7F5-442A-9BAC-201E9FD4C055}|src\\CosmenticFormulaApp.Web\\CosmenticFormulaApp.Web.csproj|c:\\users\\dihba\\desktop\\coptis\\src\\cosmenticformulaapp.web\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
-      "RelativeMoniker": "D:0:0:{55D483BB-A7F5-442A-9BAC-201E9FD4C055}|src\\CosmenticFormulaApp.Web\\CosmenticFormulaApp.Web.csproj|solutionrelative:src\\cosmenticformulaapp.web\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{02722F0A-8410-4B30-9D2D-BF47928B64FA}|src\\CosmenticFormulaApp.Application\\CosmenticFormulaApp.Application.csproj|c:\\users\\dihba\\desktop\\coptis\\src\\cosmenticformulaapp.application\\common\\models\\importbatchresult.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -149,10 +177,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{55D483BB-A7F5-442A-9BAC-201E9FD4C055}|src\\CosmenticFormulaApp.Web\\CosmenticFormulaApp.Web.csproj|c:\\users\\dihba\\desktop\\coptis\\src\\cosmenticformulaapp.web\\shared\\components\\header.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{55D483BB-A7F5-442A-9BAC-201E9FD4C055}|src\\CosmenticFormulaApp.Web\\CosmenticFormulaApp.Web.csproj|solutionrelative:src\\cosmenticformulaapp.web\\shared\\components\\header.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{55D483BB-A7F5-442A-9BAC-201E9FD4C055}|src\\CosmenticFormulaApp.Web\\CosmenticFormulaApp.Web.csproj|c:\\users\\dihba\\desktop\\coptis\\src\\cosmenticformulaapp.web\\wwwroot\\css\\site.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
-      "RelativeMoniker": "D:0:0:{55D483BB-A7F5-442A-9BAC-201E9FD4C055}|src\\CosmenticFormulaApp.Web\\CosmenticFormulaApp.Web.csproj|solutionrelative:src\\cosmenticformulaapp.web\\wwwroot\\css\\site.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{55D483BB-A7F5-442A-9BAC-201E9FD4C055}|src\\CosmenticFormulaApp.Web\\CosmenticFormulaApp.Web.csproj|c:\\users\\dihba\\desktop\\coptis\\src\\cosmenticformulaapp.web\\pages\\index.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
@@ -523,10 +547,6 @@
       "RelativeMoniker": "D:0:0:{3041E6B0-D072-4542-AA11-5D4FC40115D1}|src\\CosmenticFormulaApp.Domain\\CosmenticFormulaApp.Domain.csproj|solutionrelative:src\\cosmenticformulaapp.domain\\entities\\common\\baseentity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\dihba\\Desktop\\Coptis\\CosmenticFormulaApp.WebApi\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:CosmenticFormulaApp.WebApi\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\dihba\\Desktop\\Coptis\\CosmenticFormulaApp.WebApi\\Middelware\\ExceptionHandlingMiddleware.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:CosmenticFormulaApp.WebApi\\Middelware\\ExceptionHandlingMiddleware.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -557,42 +577,245 @@
       "VerticalTabListWidth": 256,
       "DocumentGroups": [
         {
-          "DockedHeight": 289,
-          "SelectedChildIndex": 7,
+          "DockedHeight": 309,
+          "SelectedChildIndex": 9,
           "Children": [
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{1c64b9c2-e352-428e-a56d-0ace190b99a6}"
             },
             {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{aa2115a1-9712-457b-9047-dbb71ca2cdd2}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "ManualImport.razor",
+              "DocumentMoniker": "C:\\Users\\dihba\\Desktop\\Coptis\\src\\CosmenticFormulaApp.Web\\Pages\\Import\\ManualImport.razor",
+              "RelativeDocumentMoniker": "src\\CosmenticFormulaApp.Web\\Pages\\Import\\ManualImport.razor",
+              "ToolTip": "C:\\Users\\dihba\\Desktop\\Coptis\\src\\CosmenticFormulaApp.Web\\Pages\\Import\\ManualImport.razor",
+              "RelativeToolTip": "src\\CosmenticFormulaApp.Web\\Pages\\Import\\ManualImport.razor",
+              "ViewState": "AgIAAG0BAAAAAAAAAAAcwDQBAAAjAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-09-14T23:52:44.701Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "MainLayout.razor",
+              "DocumentMoniker": "C:\\Users\\dihba\\Desktop\\Coptis\\src\\CosmenticFormulaApp.Web\\Shared\\MainLayout.razor",
+              "RelativeDocumentMoniker": "src\\CosmenticFormulaApp.Web\\Shared\\MainLayout.razor",
+              "ToolTip": "C:\\Users\\dihba\\Desktop\\Coptis\\src\\CosmenticFormulaApp.Web\\Shared\\MainLayout.razor",
+              "RelativeToolTip": "src\\CosmenticFormulaApp.Web\\Shared\\MainLayout.razor",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAGAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-09-14T23:45:25.77Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Users\\dihba\\Desktop\\Coptis\\src\\CosmenticFormulaApp.Web\\appsettings.json",
+              "RelativeDocumentMoniker": "src\\CosmenticFormulaApp.Web\\appsettings.json",
+              "ToolTip": "C:\\Users\\dihba\\Desktop\\Coptis\\src\\CosmenticFormulaApp.Web\\appsettings.json",
+              "RelativeToolTip": "src\\CosmenticFormulaApp.Web\\appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAADAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-09-15T00:42:31.646Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\dihba\\Desktop\\Coptis\\src\\CosmenticFormulaApp.Web\\Program.cs",
+              "RelativeDocumentMoniker": "src\\CosmenticFormulaApp.Web\\Program.cs",
+              "ToolTip": "C:\\Users\\dihba\\Desktop\\Coptis\\src\\CosmenticFormulaApp.Web\\Program.cs",
+              "RelativeToolTip": "src\\CosmenticFormulaApp.Web\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAABEAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-14T23:57:03.686Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "IFileUploadService.cs",
+              "DocumentMoniker": "C:\\Users\\dihba\\Desktop\\Coptis\\src\\CosmenticFormulaApp.Web\\Services\\IFileUploadService.cs",
+              "RelativeDocumentMoniker": "src\\CosmenticFormulaApp.Web\\Services\\IFileUploadService.cs",
+              "ToolTip": "C:\\Users\\dihba\\Desktop\\Coptis\\src\\CosmenticFormulaApp.Web\\Services\\IFileUploadService.cs",
+              "RelativeToolTip": "src\\CosmenticFormulaApp.Web\\Services\\IFileUploadService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-17T18:18:58.424Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "FileUploadService.cs",
+              "DocumentMoniker": "C:\\Users\\dihba\\Desktop\\Coptis\\src\\CosmenticFormulaApp.Web\\Services\\FileUploadService.cs",
+              "RelativeDocumentMoniker": "src\\CosmenticFormulaApp.Web\\Services\\FileUploadService.cs",
+              "ToolTip": "C:\\Users\\dihba\\Desktop\\Coptis\\src\\CosmenticFormulaApp.Web\\Services\\FileUploadService.cs",
+              "RelativeToolTip": "src\\CosmenticFormulaApp.Web\\Services\\FileUploadService.cs",
+              "ViewState": "AgIAADwAAAAAAAAAAAAIwE0AAAANAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-17T18:19:27.16Z",
+              "EditorCaption": ""
+            },
+            {
               "$type": "Document",
               "DocumentIndex": 1,
+              "Title": "ImportResults.razor",
+              "DocumentMoniker": "C:\\Users\\dihba\\Desktop\\Coptis\\src\\CosmenticFormulaApp.Web\\Pages\\Import\\Components\\ImportResults.razor",
+              "RelativeDocumentMoniker": "src\\CosmenticFormulaApp.Web\\Pages\\Import\\Components\\ImportResults.razor",
+              "ToolTip": "C:\\Users\\dihba\\Desktop\\Coptis\\src\\CosmenticFormulaApp.Web\\Pages\\Import\\Components\\ImportResults.razor",
+              "RelativeToolTip": "src\\CosmenticFormulaApp.Web\\Pages\\Import\\Components\\ImportResults.razor",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACoAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-09-14T23:55:16.297Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "app.js",
+              "DocumentMoniker": "C:\\Users\\dihba\\Desktop\\Coptis\\src\\CosmenticFormulaApp.Web\\wwwroot\\js\\app.js",
+              "RelativeDocumentMoniker": "src\\CosmenticFormulaApp.Web\\wwwroot\\js\\app.js",
+              "ToolTip": "C:\\Users\\dihba\\Desktop\\Coptis\\src\\CosmenticFormulaApp.Web\\wwwroot\\js\\app.js",
+              "RelativeToolTip": "src\\CosmenticFormulaApp.Web\\wwwroot\\js\\app.js",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
+              "WhenOpened": "2025-09-17T21:00:22.977Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{cce594b6-0c39-4442-ba28-10c64ac7e89f}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "FormulaRow.razor",
+              "DocumentMoniker": "C:\\Users\\dihba\\Desktop\\Coptis\\src\\CosmenticFormulaApp.Web\\Shared\\Components\\FormulaRow.razor",
+              "RelativeDocumentMoniker": "src\\CosmenticFormulaApp.Web\\Shared\\Components\\FormulaRow.razor",
+              "ToolTip": "C:\\Users\\dihba\\Desktop\\Coptis\\src\\CosmenticFormulaApp.Web\\Shared\\Components\\FormulaRow.razor",
+              "RelativeToolTip": "src\\CosmenticFormulaApp.Web\\Shared\\Components\\FormulaRow.razor",
+              "ViewState": "AgIAAAwAAAAAAAAAAAAAAAAAAAAyAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-09-14T23:48:16.612Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
               "Title": "SubstanceAnalysis.razor",
               "DocumentMoniker": "C:\\Users\\dihba\\Desktop\\Coptis\\src\\CosmenticFormulaApp.Web\\Pages\\Analysis\\SubstanceAnalysis.razor",
               "RelativeDocumentMoniker": "src\\CosmenticFormulaApp.Web\\Pages\\Analysis\\SubstanceAnalysis.razor",
               "ToolTip": "C:\\Users\\dihba\\Desktop\\Coptis\\src\\CosmenticFormulaApp.Web\\Pages\\Analysis\\SubstanceAnalysis.razor",
               "RelativeToolTip": "src\\CosmenticFormulaApp.Web\\Pages\\Analysis\\SubstanceAnalysis.razor",
-              "ViewState": "AgIAAOEAAAAAAAAAAAAIwPcAAAABAAAAAAAAAA==",
+              "ViewState": "AgIAADYAAAAAAAAAAAD4v0MAAAAhAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
               "WhenOpened": "2025-09-14T23:55:51.647Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 10,
+              "Title": "CosmenticFormulaApp.Web.Tests",
+              "DocumentMoniker": "C:\\Users\\dihba\\Desktop\\Coptis\\tests\\CosmenticFormulaApp.Web.Tests\\CosmenticFormulaApp.Web.Tests.csproj",
+              "RelativeDocumentMoniker": "tests\\CosmenticFormulaApp.Web.Tests\\CosmenticFormulaApp.Web.Tests.csproj",
+              "ToolTip": "C:\\Users\\dihba\\Desktop\\Coptis\\tests\\CosmenticFormulaApp.Web.Tests\\CosmenticFormulaApp.Web.Tests.csproj",
+              "RelativeToolTip": "tests\\CosmenticFormulaApp.Web.Tests\\CosmenticFormulaApp.Web.Tests.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2025-09-17T18:29:05.025Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "app.css",
+              "DocumentMoniker": "C:\\Users\\dihba\\Desktop\\Coptis\\src\\CosmenticFormulaApp.Web\\wwwroot\\css\\app.css",
+              "RelativeDocumentMoniker": "src\\CosmenticFormulaApp.Web\\wwwroot\\css\\app.css",
+              "ToolTip": "C:\\Users\\dihba\\Desktop\\Coptis\\src\\CosmenticFormulaApp.Web\\wwwroot\\css\\app.css",
+              "RelativeToolTip": "src\\CosmenticFormulaApp.Web\\wwwroot\\css\\app.css",
+              "ViewState": "AgIAAHwBAAAAAAAAAAAAAIsBAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2025-09-17T21:02:51.438Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "DropZone.razor",
+              "DocumentMoniker": "C:\\Users\\dihba\\Desktop\\Coptis\\src\\CosmenticFormulaApp.Web\\Shared\\Components\\Common\\DropZone.razor",
+              "RelativeDocumentMoniker": "src\\CosmenticFormulaApp.Web\\Shared\\Components\\Common\\DropZone.razor",
+              "ToolTip": "C:\\Users\\dihba\\Desktop\\Coptis\\src\\CosmenticFormulaApp.Web\\Shared\\Components\\Common\\DropZone.razor",
+              "RelativeToolTip": "src\\CosmenticFormulaApp.Web\\Shared\\Components\\Common\\DropZone.razor",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAALEAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-09-14T23:54:40.781Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "site.css",
+              "DocumentMoniker": "C:\\Users\\dihba\\Desktop\\Coptis\\src\\CosmenticFormulaApp.Web\\wwwroot\\css\\site.css",
+              "RelativeDocumentMoniker": "src\\CosmenticFormulaApp.Web\\wwwroot\\css\\site.css",
+              "ToolTip": "C:\\Users\\dihba\\Desktop\\Coptis\\src\\CosmenticFormulaApp.Web\\wwwroot\\css\\site.css",
+              "RelativeToolTip": "src\\CosmenticFormulaApp.Web\\wwwroot\\css\\site.css",
+              "ViewState": "AgIAAHAAAAAAAAAAAAAmwPUAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2025-09-14T23:58:23.881Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
               "Title": "AnalysisSummary.razor",
               "DocumentMoniker": "C:\\Users\\dihba\\Desktop\\Coptis\\src\\CosmenticFormulaApp.Web\\Pages\\Analysis\\Components\\AnalysisSummary.razor",
               "RelativeDocumentMoniker": "src\\CosmenticFormulaApp.Web\\Pages\\Analysis\\Components\\AnalysisSummary.razor",
               "ToolTip": "C:\\Users\\dihba\\Desktop\\Coptis\\src\\CosmenticFormulaApp.Web\\Pages\\Analysis\\Components\\AnalysisSummary.razor",
               "RelativeToolTip": "src\\CosmenticFormulaApp.Web\\Pages\\Analysis\\Components\\AnalysisSummary.razor",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAACYAAAABAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAADYAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
               "WhenOpened": "2025-09-14T23:56:32.258Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 15,
+              "Title": "UIStateService .cs",
+              "DocumentMoniker": "C:\\Users\\dihba\\Desktop\\Coptis\\src\\CosmenticFormulaApp.Web\\Services\\UIStateService .cs",
+              "RelativeDocumentMoniker": "src\\CosmenticFormulaApp.Web\\Services\\UIStateService .cs",
+              "ToolTip": "C:\\Users\\dihba\\Desktop\\Coptis\\src\\CosmenticFormulaApp.Web\\Services\\UIStateService .cs",
+              "RelativeToolTip": "src\\CosmenticFormulaApp.Web\\Services\\UIStateService .cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAzAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-17T18:21:08.822Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "IUIStateService.cs",
+              "DocumentMoniker": "C:\\Users\\dihba\\Desktop\\Coptis\\src\\CosmenticFormulaApp.Web\\Services\\IUIStateService.cs",
+              "RelativeDocumentMoniker": "src\\CosmenticFormulaApp.Web\\Services\\IUIStateService.cs",
+              "ToolTip": "C:\\Users\\dihba\\Desktop\\Coptis\\src\\CosmenticFormulaApp.Web\\Services\\IUIStateService.cs",
+              "RelativeToolTip": "src\\CosmenticFormulaApp.Web\\Services\\IUIStateService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-17T18:20:21.271Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
               "Title": "SubstanceTable.razor",
               "DocumentMoniker": "C:\\Users\\dihba\\Desktop\\Coptis\\src\\CosmenticFormulaApp.Web\\Pages\\Analysis\\Components\\SubstanceTable.razor",
               "RelativeDocumentMoniker": "src\\CosmenticFormulaApp.Web\\Pages\\Analysis\\Components\\SubstanceTable.razor",
@@ -600,25 +823,11 @@
               "RelativeToolTip": "src\\CosmenticFormulaApp.Web\\Pages\\Analysis\\Components\\SubstanceTable.razor",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAEEAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-09-14T23:56:50.313Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-09-14T23:56:50.313Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "FormulaRow.razor",
-              "DocumentMoniker": "C:\\Users\\dihba\\Desktop\\Coptis\\src\\CosmenticFormulaApp.Web\\Shared\\Components\\FormulaRow.razor",
-              "RelativeDocumentMoniker": "src\\CosmenticFormulaApp.Web\\Shared\\Components\\FormulaRow.razor",
-              "ToolTip": "C:\\Users\\dihba\\Desktop\\Coptis\\src\\CosmenticFormulaApp.Web\\Shared\\Components\\FormulaRow.razor",
-              "RelativeToolTip": "src\\CosmenticFormulaApp.Web\\Shared\\Components\\FormulaRow.razor",
-              "ViewState": "AgIAAAcAAAAAAAAAAAAowBMAAAAXAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-09-14T23:48:16.612Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 17,
               "Title": "FormulaTable.razor",
               "DocumentMoniker": "C:\\Users\\dihba\\Desktop\\Coptis\\src\\CosmenticFormulaApp.Web\\Shared\\Components\\FormulaTable.razor",
               "RelativeDocumentMoniker": "src\\CosmenticFormulaApp.Web\\Shared\\Components\\FormulaTable.razor",
@@ -626,51 +835,11 @@
               "RelativeToolTip": "src\\CosmenticFormulaApp.Web\\Shared\\Components\\FormulaTable.razor",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABsAAAAoAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-09-14T23:47:58.05Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-09-14T23:47:58.05Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "ManualImport.razor",
-              "DocumentMoniker": "C:\\Users\\dihba\\Desktop\\Coptis\\src\\CosmenticFormulaApp.Web\\Pages\\Import\\ManualImport.razor",
-              "RelativeDocumentMoniker": "src\\CosmenticFormulaApp.Web\\Pages\\Import\\ManualImport.razor",
-              "ToolTip": "C:\\Users\\dihba\\Desktop\\Coptis\\src\\CosmenticFormulaApp.Web\\Pages\\Import\\ManualImport.razor",
-              "RelativeToolTip": "src\\CosmenticFormulaApp.Web\\Pages\\Import\\ManualImport.razor",
-              "ViewState": "AgIAANkAAAAAAAAAAAAowOUAAAAxAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-09-14T23:52:44.701Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "CosmenticFormulaApp.WebApi.csproj",
-              "DocumentMoniker": "C:\\Users\\dihba\\Desktop\\Coptis\\src\\CosmenticFormulaApp.WebApi\\CosmenticFormulaApp.WebApi.csproj",
-              "RelativeDocumentMoniker": "src\\CosmenticFormulaApp.WebApi\\CosmenticFormulaApp.WebApi.csproj",
-              "ToolTip": "C:\\Users\\dihba\\Desktop\\Coptis\\src\\CosmenticFormulaApp.WebApi\\CosmenticFormulaApp.WebApi.csproj",
-              "RelativeToolTip": "src\\CosmenticFormulaApp.WebApi\\CosmenticFormulaApp.WebApi.csproj",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2025-09-17T13:55:38.892Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "ImportResults.razor",
-              "DocumentMoniker": "C:\\Users\\dihba\\Desktop\\Coptis\\src\\CosmenticFormulaApp.Web\\Pages\\Import\\Components\\ImportResults.razor",
-              "RelativeDocumentMoniker": "src\\CosmenticFormulaApp.Web\\Pages\\Import\\Components\\ImportResults.razor",
-              "ToolTip": "C:\\Users\\dihba\\Desktop\\Coptis\\src\\CosmenticFormulaApp.Web\\Pages\\Import\\Components\\ImportResults.razor",
-              "RelativeToolTip": "src\\CosmenticFormulaApp.Web\\Pages\\Import\\Components\\ImportResults.razor",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAACYAAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-09-14T23:55:16.297Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 19,
               "Title": "RawMaterialsList.razor",
               "DocumentMoniker": "C:\\Users\\dihba\\Desktop\\Coptis\\src\\CosmenticFormulaApp.Web\\Pages\\RawMaterials\\RawMaterialsList.razor",
               "RelativeDocumentMoniker": "src\\CosmenticFormulaApp.Web\\Pages\\RawMaterials\\RawMaterialsList.razor",
@@ -678,12 +847,11 @@
               "RelativeToolTip": "src\\CosmenticFormulaApp.Web\\Pages\\RawMaterials\\RawMaterialsList.razor",
               "ViewState": "AgIAALYAAAAAAAAAAADgv+AAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-09-17T16:39:04.762Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-09-17T16:39:04.762Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 20,
               "Title": "UploadResult.cs",
               "DocumentMoniker": "C:\\Users\\dihba\\Desktop\\Coptis\\src\\CosmenticFormulaApp.Web\\Models\\UploadResult.cs",
               "RelativeDocumentMoniker": "src\\CosmenticFormulaApp.Web\\Models\\UploadResult.cs",
@@ -691,12 +859,11 @@
               "RelativeToolTip": "src\\CosmenticFormulaApp.Web\\Models\\UploadResult.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-17T16:35:26.053Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-09-17T16:35:26.053Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 22,
               "Title": "_Imports.razor",
               "DocumentMoniker": "C:\\Users\\dihba\\Desktop\\Coptis\\src\\CosmenticFormulaApp.Web\\_Imports.razor",
               "RelativeDocumentMoniker": "src\\CosmenticFormulaApp.Web\\_Imports.razor",
@@ -708,31 +875,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
-              "Title": "MainLayout.razor",
-              "DocumentMoniker": "C:\\Users\\dihba\\Desktop\\Coptis\\src\\CosmenticFormulaApp.Web\\Shared\\MainLayout.razor",
-              "RelativeDocumentMoniker": "src\\CosmenticFormulaApp.Web\\Shared\\MainLayout.razor",
-              "ToolTip": "C:\\Users\\dihba\\Desktop\\Coptis\\src\\CosmenticFormulaApp.Web\\Shared\\MainLayout.razor",
-              "RelativeToolTip": "src\\CosmenticFormulaApp.Web\\Shared\\MainLayout.razor",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAANAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-09-14T23:45:25.77Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 11,
-              "Title": "DropZone.razor",
-              "DocumentMoniker": "C:\\Users\\dihba\\Desktop\\Coptis\\src\\CosmenticFormulaApp.Web\\Shared\\Components\\Common\\DropZone.razor",
-              "RelativeDocumentMoniker": "src\\CosmenticFormulaApp.Web\\Shared\\Components\\Common\\DropZone.razor",
-              "ToolTip": "C:\\Users\\dihba\\Desktop\\Coptis\\src\\CosmenticFormulaApp.Web\\Shared\\Components\\Common\\DropZone.razor",
-              "RelativeToolTip": "src\\CosmenticFormulaApp.Web\\Shared\\Components\\Common\\DropZone.razor",
-              "ViewState": "AgIAACoAAAAAAAAAAAA0wJ0AAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-09-14T23:54:40.781Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 14,
+              "DocumentIndex": 23,
               "Title": "FormulaList.razor",
               "DocumentMoniker": "C:\\Users\\dihba\\Desktop\\Coptis\\src\\CosmenticFormulaApp.Web\\Pages\\Formulas\\FormulaList.razor",
               "RelativeDocumentMoniker": "src\\CosmenticFormulaApp.Web\\Pages\\Formulas\\FormulaList.razor",
@@ -744,7 +887,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 21,
               "Title": "SignalRService.cs",
               "DocumentMoniker": "C:\\Users\\dihba\\Desktop\\Coptis\\src\\CosmenticFormulaApp.Web\\Services\\SignalRService.cs",
               "RelativeDocumentMoniker": "src\\CosmenticFormulaApp.Web\\Services\\SignalRService.cs",
@@ -752,12 +895,11 @@
               "RelativeToolTip": "src\\CosmenticFormulaApp.Web\\Services\\SignalRService.cs",
               "ViewState": "AgIAAAYAAAAAAAAAAAAAAA4AAAAsAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-17T14:02:44.097Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-09-17T14:02:44.097Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 15,
+              "DocumentIndex": 24,
               "Title": "CosmenticFormulaApp.Application.csproj",
               "DocumentMoniker": "C:\\Users\\dihba\\Desktop\\Coptis\\src\\CosmenticFormulaApp.Application\\CosmenticFormulaApp.Application.csproj",
               "RelativeDocumentMoniker": "src\\CosmenticFormulaApp.Application\\CosmenticFormulaApp.Application.csproj",
@@ -770,7 +912,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 16,
+              "DocumentIndex": 25,
               "Title": "CosmenticFormulaApp.Web.csproj",
               "DocumentMoniker": "C:\\Users\\dihba\\Desktop\\Coptis\\src\\CosmenticFormulaApp.Web\\CosmenticFormulaApp.Web.csproj",
               "RelativeDocumentMoniker": "src\\CosmenticFormulaApp.Web\\CosmenticFormulaApp.Web.csproj",
@@ -783,7 +925,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 17,
+              "DocumentIndex": 26,
               "Title": "FormulaUpdateHub.cs",
               "DocumentMoniker": "C:\\Users\\dihba\\Desktop\\Coptis\\src\\CosmenticFormulaApp.Web\\Hubs\\FormulaUpdateHub.cs",
               "RelativeDocumentMoniker": "src\\CosmenticFormulaApp.Web\\Hubs\\FormulaUpdateHub.cs",
@@ -795,7 +937,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 18,
+              "DocumentIndex": 27,
               "Title": "ISignalRService.cs",
               "DocumentMoniker": "C:\\Users\\dihba\\Desktop\\Coptis\\src\\CosmenticFormulaApp.Web\\Services\\ISignalRService.cs",
               "RelativeDocumentMoniker": "src\\CosmenticFormulaApp.Web\\Services\\ISignalRService.cs",
@@ -807,7 +949,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 19,
+              "DocumentIndex": 28,
               "Title": "IFormulaUpdateClient.cs",
               "DocumentMoniker": "C:\\Users\\dihba\\Desktop\\Coptis\\src\\CosmenticFormulaApp.Web\\Services\\IFormulaUpdateClient.cs",
               "RelativeDocumentMoniker": "src\\CosmenticFormulaApp.Web\\Services\\IFormulaUpdateClient.cs",
@@ -819,7 +961,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 23,
+              "DocumentIndex": 31,
               "Title": "FormulasController.cs",
               "DocumentMoniker": "C:\\Users\\dihba\\Desktop\\Coptis\\CosmenticFormulaApp.WebApi\\Controllers\\FormulasController.cs",
               "RelativeDocumentMoniker": "CosmenticFormulaApp.WebApi\\Controllers\\FormulasController.cs",
@@ -830,7 +972,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 22,
+              "DocumentIndex": 30,
               "Title": "ToastNotification.razor",
               "DocumentMoniker": "C:\\Users\\dihba\\Desktop\\Coptis\\src\\CosmenticFormulaApp.Web\\Shared\\Components\\Common\\ToastNotification.razor",
               "RelativeDocumentMoniker": "src\\CosmenticFormulaApp.Web\\Shared\\Components\\Common\\ToastNotification.razor",
@@ -842,7 +984,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 20,
+              "DocumentIndex": 29,
               "Title": "CosmenticFormulaApp.Infrastructure.csproj",
               "DocumentMoniker": "C:\\Users\\dihba\\Desktop\\Coptis\\src\\CosmenticFormulaApp.Infrastructure\\CosmenticFormulaApp.Infrastructure.csproj",
               "RelativeDocumentMoniker": "src\\CosmenticFormulaApp.Infrastructure\\CosmenticFormulaApp.Infrastructure.csproj",
@@ -855,7 +997,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 136,
+              "DocumentIndex": 141,
               "Title": "CosmenticFormulaApp.WebApi.csproj",
               "DocumentMoniker": "C:\\Users\\dihba\\Desktop\\Coptis\\CosmenticFormulaApp.WebApi\\CosmenticFormulaApp.WebApi.csproj",
               "RelativeDocumentMoniker": "CosmenticFormulaApp.WebApi\\CosmenticFormulaApp.WebApi.csproj",
@@ -866,7 +1008,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 133,
+              "DocumentIndex": 138,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\dihba\\Desktop\\Coptis\\CosmenticFormulaApp.WebApi\\Program.cs",
               "RelativeDocumentMoniker": "CosmenticFormulaApp.WebApi\\Program.cs",
@@ -877,7 +1019,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 132,
+              "DocumentIndex": 137,
               "Title": "AnalysisController.cs",
               "DocumentMoniker": "C:\\Users\\dihba\\Desktop\\Coptis\\CosmenticFormulaApp.WebApi\\Controllers\\AnalysisController.cs",
               "RelativeDocumentMoniker": "CosmenticFormulaApp.WebApi\\Controllers\\AnalysisController.cs",
@@ -888,19 +1030,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 21,
-              "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\dihba\\Desktop\\Coptis\\src\\CosmenticFormulaApp.Web\\Program.cs",
-              "RelativeDocumentMoniker": "src\\CosmenticFormulaApp.Web\\Program.cs",
-              "ToolTip": "C:\\Users\\dihba\\Desktop\\Coptis\\src\\CosmenticFormulaApp.Web\\Program.cs",
-              "RelativeToolTip": "src\\CosmenticFormulaApp.Web\\Program.cs",
-              "ViewState": "AgIAAB0AAAAAAAAAAAAAwCkAAAAKAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-14T23:57:03.686Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 131,
+              "DocumentIndex": 136,
               "Title": "ExceptionHandlingMiddleware.cs",
               "DocumentMoniker": "C:\\Users\\dihba\\Desktop\\Coptis\\CosmenticFormulaApp.WebApi\\Middelware\\ExceptionHandlingMiddleware.cs",
               "RelativeDocumentMoniker": "CosmenticFormulaApp.WebApi\\Middelware\\ExceptionHandlingMiddleware.cs",
@@ -911,18 +1041,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 130,
-              "Title": "appsettings.json",
-              "DocumentMoniker": "C:\\Users\\dihba\\Desktop\\Coptis\\CosmenticFormulaApp.WebApi\\appsettings.json",
-              "RelativeDocumentMoniker": "CosmenticFormulaApp.WebApi\\appsettings.json",
-              "ToolTip": "C:\\Users\\dihba\\Desktop\\Coptis\\CosmenticFormulaApp.WebApi\\appsettings.json",
-              "RelativeToolTip": "CosmenticFormulaApp.WebApi\\appsettings.json",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2025-09-15T01:35:57.372Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 134,
+              "DocumentIndex": 139,
               "Title": "WeatherForecastController.cs",
               "DocumentMoniker": "C:\\Users\\dihba\\Desktop\\Coptis\\CosmenticFormulaApp.WebApi\\Controllers\\WeatherForecastController.cs",
               "RelativeDocumentMoniker": "CosmenticFormulaApp.WebApi\\Controllers\\WeatherForecastController.cs",
@@ -933,7 +1052,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 135,
+              "DocumentIndex": 140,
               "Title": "RawMaterialsController.cs",
               "DocumentMoniker": "C:\\Users\\dihba\\Desktop\\Coptis\\CosmenticFormulaApp.WebApi\\Controllers\\RawMaterialsController.cs",
               "RelativeDocumentMoniker": "CosmenticFormulaApp.WebApi\\Controllers\\RawMaterialsController.cs",
@@ -944,19 +1063,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 24,
-              "Title": "appsettings.json",
-              "DocumentMoniker": "C:\\Users\\dihba\\Desktop\\Coptis\\src\\CosmenticFormulaApp.Web\\appsettings.json",
-              "RelativeDocumentMoniker": "src\\CosmenticFormulaApp.Web\\appsettings.json",
-              "ToolTip": "C:\\Users\\dihba\\Desktop\\Coptis\\src\\CosmenticFormulaApp.Web\\appsettings.json",
-              "RelativeToolTip": "src\\CosmenticFormulaApp.Web\\appsettings.json",
-              "ViewState": "AgIAAAQAAAAAAAAAAAA0wBUAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2025-09-15T00:42:31.646Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 28,
+              "DocumentIndex": 35,
               "Title": "FormulaListItemDto.cs",
               "DocumentMoniker": "C:\\Users\\dihba\\Desktop\\Coptis\\src\\CosmenticFormulaApp.Application\\DTOs\\Output\\FormulaListItemDto.cs",
               "RelativeDocumentMoniker": "src\\CosmenticFormulaApp.Application\\DTOs\\Output\\FormulaListItemDto.cs",
@@ -968,7 +1075,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 27,
+              "DocumentIndex": 34,
               "Title": "SubstanceAnalysisDto.cs",
               "DocumentMoniker": "C:\\Users\\dihba\\Desktop\\Coptis\\src\\CosmenticFormulaApp.Application\\DTOs\\Output\\SubstanceAnalysisDto.cs",
               "RelativeDocumentMoniker": "src\\CosmenticFormulaApp.Application\\DTOs\\Output\\SubstanceAnalysisDto.cs",
@@ -980,7 +1087,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 26,
+              "DocumentIndex": 33,
               "Title": "ConfirmationModal.razor",
               "DocumentMoniker": "C:\\Users\\dihba\\Desktop\\Coptis\\src\\CosmenticFormulaApp.Web\\Shared\\Components\\Common\\ConfirmationModal.razor",
               "RelativeDocumentMoniker": "src\\CosmenticFormulaApp.Web\\Shared\\Components\\Common\\ConfirmationModal.razor",
@@ -992,7 +1099,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 25,
+              "DocumentIndex": 32,
               "Title": "ImportBatchResult.cs",
               "DocumentMoniker": "C:\\Users\\dihba\\Desktop\\Coptis\\src\\CosmenticFormulaApp.Application\\Common\\Models\\ImportBatchResult.cs",
               "RelativeDocumentMoniker": "src\\CosmenticFormulaApp.Application\\Common\\Models\\ImportBatchResult.cs",
@@ -1000,11 +1107,12 @@
               "RelativeToolTip": "src\\CosmenticFormulaApp.Application\\Common\\Models\\ImportBatchResult.cs",
               "ViewState": "AgIAAAkAAAAAAAAAAAAkwA4AAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-14T21:07:14.525Z"
+              "WhenOpened": "2025-09-14T21:07:14.525Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 29,
+              "DocumentIndex": 36,
               "Title": "NotificationService.cs",
               "DocumentMoniker": "C:\\Users\\dihba\\Desktop\\Coptis\\src\\CosmenticFormulaApp.Web\\Services\\NotificationService.cs",
               "RelativeDocumentMoniker": "src\\CosmenticFormulaApp.Web\\Services\\NotificationService.cs",
@@ -1016,7 +1124,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 30,
+              "DocumentIndex": 37,
               "Title": "StatusBadge.razor",
               "DocumentMoniker": "C:\\Users\\dihba\\Desktop\\Coptis\\src\\CosmenticFormulaApp.Web\\Shared\\Components\\Common\\StatusBadge.razor",
               "RelativeDocumentMoniker": "src\\CosmenticFormulaApp.Web\\Shared\\Components\\Common\\StatusBadge.razor",
@@ -1028,7 +1136,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 31,
+              "DocumentIndex": 38,
               "Title": "EmptyState.razor",
               "DocumentMoniker": "C:\\Users\\dihba\\Desktop\\Coptis\\src\\CosmenticFormulaApp.Web\\Shared\\Components\\Common\\EmptyState.razor",
               "RelativeDocumentMoniker": "src\\CosmenticFormulaApp.Web\\Shared\\Components\\Common\\EmptyState.razor",
@@ -1040,7 +1148,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 32,
+              "DocumentIndex": 39,
               "Title": "LoadingSpinner.razor",
               "DocumentMoniker": "C:\\Users\\dihba\\Desktop\\Coptis\\src\\CosmenticFormulaApp.Web\\Shared\\Components\\Common\\LoadingSpinner.razor",
               "RelativeDocumentMoniker": "src\\CosmenticFormulaApp.Web\\Shared\\Components\\Common\\LoadingSpinner.razor",
@@ -1052,7 +1160,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 33,
+              "DocumentIndex": 40,
               "Title": "SearchBox.razor",
               "DocumentMoniker": "C:\\Users\\dihba\\Desktop\\Coptis\\src\\CosmenticFormulaApp.Web\\Shared\\Components\\Common\\SearchBox.razor",
               "RelativeDocumentMoniker": "src\\CosmenticFormulaApp.Web\\Shared\\Components\\Common\\SearchBox.razor",
@@ -1064,7 +1172,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 34,
+              "DocumentIndex": 41,
               "Title": "CosmenticFormulaApp.Domain.csproj",
               "DocumentMoniker": "C:\\Users\\dihba\\Desktop\\Coptis\\src\\CosmenticFormulaApp.Domain\\CosmenticFormulaApp.Domain.csproj",
               "RelativeDocumentMoniker": "src\\CosmenticFormulaApp.Domain\\CosmenticFormulaApp.Domain.csproj",
@@ -1077,7 +1185,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 35,
+              "DocumentIndex": 42,
               "Title": "SubstanceAnalysis.cs",
               "DocumentMoniker": "C:\\Users\\dihba\\Desktop\\Coptis\\src\\CosmenticFormulaApp.Domain\\Models\\SubstanceAnalysis.cs",
               "RelativeDocumentMoniker": "src\\CosmenticFormulaApp.Domain\\Models\\SubstanceAnalysis.cs",
@@ -1085,12 +1193,11 @@
               "RelativeToolTip": "src\\CosmenticFormulaApp.Domain\\Models\\SubstanceAnalysis.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAqwAgAAAARAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-14T20:55:33.89Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-09-14T20:55:33.89Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 36,
+              "DocumentIndex": 43,
               "Title": "Header.razor",
               "DocumentMoniker": "C:\\Users\\dihba\\Desktop\\Coptis\\src\\CosmenticFormulaApp.Web\\Shared\\Components\\Header.razor",
               "RelativeDocumentMoniker": "src\\CosmenticFormulaApp.Web\\Shared\\Components\\Header.razor",
@@ -1102,19 +1209,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 37,
-              "Title": "site.css",
-              "DocumentMoniker": "C:\\Users\\dihba\\Desktop\\Coptis\\src\\CosmenticFormulaApp.Web\\wwwroot\\css\\site.css",
-              "RelativeDocumentMoniker": "src\\CosmenticFormulaApp.Web\\wwwroot\\css\\site.css",
-              "ToolTip": "C:\\Users\\dihba\\Desktop\\Coptis\\src\\CosmenticFormulaApp.Web\\wwwroot\\css\\site.css",
-              "RelativeToolTip": "src\\CosmenticFormulaApp.Web\\wwwroot\\css\\site.css",
-              "ViewState": "AgIAAN8AAAAAAAAAAAAmwPUAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
-              "WhenOpened": "2025-09-14T23:58:23.881Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 38,
+              "DocumentIndex": 44,
               "Title": "Index.razor",
               "DocumentMoniker": "C:\\Users\\dihba\\Desktop\\Coptis\\src\\CosmenticFormulaApp.Web\\Pages\\Index.razor",
               "RelativeDocumentMoniker": "src\\CosmenticFormulaApp.Web\\Pages\\Index.razor",
@@ -1126,7 +1221,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 39,
+              "DocumentIndex": 45,
               "Title": "NavMenu.razor",
               "DocumentMoniker": "C:\\Users\\dihba\\Desktop\\Coptis\\src\\CosmenticFormulaApp.Web\\Shared\\NavMenu.razor",
               "RelativeDocumentMoniker": "src\\CosmenticFormulaApp.Web\\Shared\\NavMenu.razor",
@@ -1138,7 +1233,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 40,
+              "DocumentIndex": 46,
               "Title": "App.razor",
               "DocumentMoniker": "C:\\Users\\dihba\\Desktop\\Coptis\\src\\CosmenticFormulaApp.Web\\App.razor",
               "RelativeDocumentMoniker": "src\\CosmenticFormulaApp.Web\\App.razor",
@@ -1150,7 +1245,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 41,
+              "DocumentIndex": 47,
               "Title": "_Layout.cshtml",
               "DocumentMoniker": "C:\\Users\\dihba\\Desktop\\Coptis\\src\\CosmenticFormulaApp.Web\\Pages\\_Layout.cshtml",
               "RelativeDocumentMoniker": "src\\CosmenticFormulaApp.Web\\Pages\\_Layout.cshtml",
@@ -1162,7 +1257,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 42,
+              "DocumentIndex": 48,
               "Title": "_Host.cshtml",
               "DocumentMoniker": "C:\\Users\\dihba\\Desktop\\Coptis\\src\\CosmenticFormulaApp.Web\\Pages\\_Host.cshtml",
               "RelativeDocumentMoniker": "src\\CosmenticFormulaApp.Web\\Pages\\_Host.cshtml",
@@ -1174,7 +1269,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 46,
+              "DocumentIndex": 52,
               "Title": "DependencyInjection.cs",
               "DocumentMoniker": "C:\\Users\\dihba\\Desktop\\Coptis\\src\\CosmenticFormulaApp.Infrastructure\\DependencyInjection.cs",
               "RelativeDocumentMoniker": "src\\CosmenticFormulaApp.Infrastructure\\DependencyInjection.cs",
@@ -1186,7 +1281,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 45,
+              "DocumentIndex": 51,
               "Title": "DependencyInjection.cs",
               "DocumentMoniker": "C:\\Users\\dihba\\Desktop\\Coptis\\src\\CosmenticFormulaApp.Application\\Common\\Extensions\\DependencyInjection.cs",
               "RelativeDocumentMoniker": "src\\CosmenticFormulaApp.Application\\Common\\Extensions\\DependencyInjection.cs",
@@ -1198,7 +1293,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 47,
+              "DocumentIndex": 53,
               "Title": "IApplicationDbContext.cs",
               "DocumentMoniker": "C:\\Users\\dihba\\Desktop\\Coptis\\src\\CosmenticFormulaApp.Application\\Common\\Interfaces\\IApplicationDbContext.cs",
               "RelativeDocumentMoniker": "src\\CosmenticFormulaApp.Application\\Common\\Interfaces\\IApplicationDbContext.cs",
@@ -1210,7 +1305,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 43,
+              "DocumentIndex": 49,
               "Title": "CostCalculationService.cs",
               "DocumentMoniker": "C:\\Users\\dihba\\Desktop\\Coptis\\src\\CosmenticFormulaApp.Domain\\Services\\CostCalculationService.cs",
               "RelativeDocumentMoniker": "src\\CosmenticFormulaApp.Domain\\Services\\CostCalculationService.cs",
@@ -1222,7 +1317,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 44,
+              "DocumentIndex": 50,
               "Title": "ICostCalculationService.cs",
               "DocumentMoniker": "C:\\Users\\dihba\\Desktop\\Coptis\\src\\CosmenticFormulaApp.Domain\\Services\\ICostCalculationService.cs",
               "RelativeDocumentMoniker": "src\\CosmenticFormulaApp.Domain\\Services\\ICostCalculationService.cs",
@@ -1234,7 +1329,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 48,
+              "DocumentIndex": 54,
               "Title": "ValidationBehavior.cs",
               "DocumentMoniker": "C:\\Users\\dihba\\Desktop\\Coptis\\src\\CosmenticFormulaApp.Application\\Common\\Behavior\\ValidationBehavior.cs",
               "RelativeDocumentMoniker": "src\\CosmenticFormulaApp.Application\\Common\\Behavior\\ValidationBehavior.cs",
@@ -1246,7 +1341,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 49,
+              "DocumentIndex": 55,
               "Title": "RawMaterialConfiguration.cs",
               "DocumentMoniker": "C:\\Users\\dihba\\Desktop\\Coptis\\src\\CosmenticFormulaApp.Infrastructure\\Data\\Configuration\\RawMaterialConfiguration.cs",
               "RelativeDocumentMoniker": "src\\CosmenticFormulaApp.Infrastructure\\Data\\Configuration\\RawMaterialConfiguration.cs",
@@ -1258,7 +1353,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 50,
+              "DocumentIndex": 56,
               "Title": "IDomainEvent.cs",
               "DocumentMoniker": "C:\\Users\\dihba\\Desktop\\Coptis\\src\\CosmenticFormulaApp.Domain\\Events\\IDomainEvent.cs",
               "RelativeDocumentMoniker": "src\\CosmenticFormulaApp.Domain\\Events\\IDomainEvent.cs",
@@ -1270,7 +1365,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 51,
+              "DocumentIndex": 57,
               "Title": "RawMaterialPriceUpdatedEventHandler.cs",
               "DocumentMoniker": "C:\\Users\\dihba\\Desktop\\Coptis\\src\\CosmenticFormulaApp.Application\\EventHandlers\\RawMaterialPriceUpdatedEventHandler.cs",
               "RelativeDocumentMoniker": "src\\CosmenticFormulaApp.Application\\EventHandlers\\RawMaterialPriceUpdatedEventHandler.cs",
@@ -1282,7 +1377,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 52,
+              "DocumentIndex": 58,
               "Title": "FormulaCostRecalculatedEventHandler.cs",
               "DocumentMoniker": "C:\\Users\\dihba\\Desktop\\Coptis\\src\\CosmenticFormulaApp.Application\\EventHandlers\\FormulaCostRecalculatedEventHandler.cs",
               "RelativeDocumentMoniker": "src\\CosmenticFormulaApp.Application\\EventHandlers\\FormulaCostRecalculatedEventHandler.cs",
@@ -1294,7 +1389,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 53,
+              "DocumentIndex": 59,
               "Title": "FormulaImportedEventHandler.cs",
               "DocumentMoniker": "C:\\Users\\dihba\\Desktop\\Coptis\\src\\CosmenticFormulaApp.Application\\EventHandlers\\FormulaImportedEventHandler.cs",
               "RelativeDocumentMoniker": "src\\CosmenticFormulaApp.Application\\EventHandlers\\FormulaImportedEventHandler.cs",
@@ -1306,7 +1401,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 54,
+              "DocumentIndex": 60,
               "Title": "ISubstanceRepository.cs",
               "DocumentMoniker": "C:\\Users\\dihba\\Desktop\\Coptis\\src\\CosmenticFormulaApp.Domain\\Repositories\\ISubstanceRepository.cs",
               "RelativeDocumentMoniker": "src\\CosmenticFormulaApp.Domain\\Repositories\\ISubstanceRepository.cs",
@@ -1318,7 +1413,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 55,
+              "DocumentIndex": 61,
               "Title": "SubstanceAnalysisService.cs",
               "DocumentMoniker": "C:\\Users\\dihba\\Desktop\\Coptis\\src\\CosmenticFormulaApp.Domain\\Services\\SubstanceAnalysisService.cs",
               "RelativeDocumentMoniker": "src\\CosmenticFormulaApp.Domain\\Services\\SubstanceAnalysisService.cs",
@@ -1330,7 +1425,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 56,
+              "DocumentIndex": 62,
               "Title": "Formula.cs",
               "DocumentMoniker": "C:\\Users\\dihba\\Desktop\\Coptis\\src\\CosmenticFormulaApp.Domain\\Entities\\Formula.cs",
               "RelativeDocumentMoniker": "src\\CosmenticFormulaApp.Domain\\Entities\\Formula.cs",
@@ -1342,7 +1437,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 57,
+              "DocumentIndex": 63,
               "Title": "FolderWatcherService.cs",
               "DocumentMoniker": "C:\\Users\\dihba\\Desktop\\Coptis\\src\\CosmenticFormulaApp.Infrastructure\\Services\\FolderWatcherService.cs",
               "RelativeDocumentMoniker": "src\\CosmenticFormulaApp.Infrastructure\\Services\\FolderWatcherService.cs",
@@ -1354,7 +1449,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 58,
+              "DocumentIndex": 64,
               "Title": "ISubstanceAnalysisService.cs",
               "DocumentMoniker": "C:\\Users\\dihba\\Desktop\\Coptis\\src\\CosmenticFormulaApp.Domain\\Services\\ISubstanceAnalysisService.cs",
               "RelativeDocumentMoniker": "src\\CosmenticFormulaApp.Domain\\Services\\ISubstanceAnalysisService.cs",
@@ -1366,7 +1461,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 59,
+              "DocumentIndex": 65,
               "Title": "FormulaImportedEvent.cs",
               "DocumentMoniker": "C:\\Users\\dihba\\Desktop\\Coptis\\src\\CosmenticFormulaApp.Domain\\Events\\FormulaImportedEvent.cs",
               "RelativeDocumentMoniker": "src\\CosmenticFormulaApp.Domain\\Events\\FormulaImportedEvent.cs",
@@ -1378,7 +1473,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 60,
+              "DocumentIndex": 66,
               "Title": "IJsonParsingService.cs",
               "DocumentMoniker": "C:\\Users\\dihba\\Desktop\\Coptis\\src\\CosmenticFormulaApp.Application\\Common\\Interfaces\\IJsonParsingService.cs",
               "RelativeDocumentMoniker": "src\\CosmenticFormulaApp.Application\\Common\\Interfaces\\IJsonParsingService.cs",
@@ -1390,7 +1485,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 61,
+              "DocumentIndex": 67,
               "Title": "RawMaterial.cs",
               "DocumentMoniker": "C:\\Users\\dihba\\Desktop\\Coptis\\src\\CosmenticFormulaApp.Domain\\Entities\\RawMaterial.cs",
               "RelativeDocumentMoniker": "src\\CosmenticFormulaApp.Domain\\Entities\\RawMaterial.cs",
@@ -1402,7 +1497,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 62,
+              "DocumentIndex": 68,
               "Title": "IFormulaValidationService.cs",
               "DocumentMoniker": "C:\\Users\\dihba\\Desktop\\Coptis\\src\\CosmenticFormulaApp.Domain\\Services\\IFormulaValidationService.cs",
               "RelativeDocumentMoniker": "src\\CosmenticFormulaApp.Domain\\Services\\IFormulaValidationService.cs",
@@ -1414,7 +1509,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 63,
+              "DocumentIndex": 69,
               "Title": "ImportFormulaCommandHandler.cs",
               "DocumentMoniker": "C:\\Users\\dihba\\Desktop\\Coptis\\src\\CosmenticFormulaApp.Application\\Formulas\\Commands\\ImportFormula\\ImportFormulaCommandHandler.cs",
               "RelativeDocumentMoniker": "src\\CosmenticFormulaApp.Application\\Formulas\\Commands\\ImportFormula\\ImportFormulaCommandHandler.cs",
@@ -1426,7 +1521,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 64,
+              "DocumentIndex": 70,
               "Title": "ValidationResult.cs",
               "DocumentMoniker": "C:\\Users\\dihba\\Desktop\\Coptis\\src\\CosmenticFormulaApp.Domain\\Models\\ValidationResult.cs",
               "RelativeDocumentMoniker": "src\\CosmenticFormulaApp.Domain\\Models\\ValidationResult.cs",
@@ -1438,7 +1533,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 65,
+              "DocumentIndex": 71,
               "Title": "FileProcessingOptions.cs",
               "DocumentMoniker": "C:\\Users\\dihba\\Desktop\\Coptis\\src\\CosmenticFormulaApp.Infrastructure\\Data\\Configuration\\FileProcessingOptions.cs",
               "RelativeDocumentMoniker": "src\\CosmenticFormulaApp.Infrastructure\\Data\\Configuration\\FileProcessingOptions.cs",
@@ -1450,7 +1545,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 66,
+              "DocumentIndex": 72,
               "Title": "ImportSettings.cs",
               "DocumentMoniker": "C:\\Users\\dihba\\Desktop\\Coptis\\src\\CosmenticFormulaApp.Infrastructure\\Data\\Configuration\\ImportSettings.cs",
               "RelativeDocumentMoniker": "src\\CosmenticFormulaApp.Infrastructure\\Data\\Configuration\\ImportSettings.cs",
@@ -1462,7 +1557,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 67,
+              "DocumentIndex": 73,
               "Title": "ConnectionStringsOptions.cs",
               "DocumentMoniker": "C:\\Users\\dihba\\Desktop\\Coptis\\src\\CosmenticFormulaApp.Infrastructure\\Data\\Configuration\\ConnectionStringsOptions.cs",
               "RelativeDocumentMoniker": "src\\CosmenticFormulaApp.Infrastructure\\Data\\Configuration\\ConnectionStringsOptions.cs",
@@ -1474,7 +1569,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 68,
+              "DocumentIndex": 74,
               "Title": "JsonParsingService.cs",
               "DocumentMoniker": "C:\\Users\\dihba\\Desktop\\Coptis\\src\\CosmenticFormulaApp.Infrastructure\\Services\\JsonParsingService.cs",
               "RelativeDocumentMoniker": "src\\CosmenticFormulaApp.Infrastructure\\Services\\JsonParsingService.cs",
@@ -1486,7 +1581,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 69,
+              "DocumentIndex": 75,
               "Title": "SubstanceRepository.cs",
               "DocumentMoniker": "C:\\Users\\dihba\\Desktop\\Coptis\\src\\CosmenticFormulaApp.Infrastructure\\Repositories\\SubstanceRepository.cs",
               "RelativeDocumentMoniker": "src\\CosmenticFormulaApp.Infrastructure\\Repositories\\SubstanceRepository.cs",
@@ -1498,7 +1593,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 70,
+              "DocumentIndex": 76,
               "Title": "RawMaterialRepository.cs",
               "DocumentMoniker": "C:\\Users\\dihba\\Desktop\\Coptis\\src\\CosmenticFormulaApp.Infrastructure\\Repositories\\RawMaterialRepository.cs",
               "RelativeDocumentMoniker": "src\\CosmenticFormulaApp.Infrastructure\\Repositories\\RawMaterialRepository.cs",
@@ -1510,7 +1605,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 71,
+              "DocumentIndex": 77,
               "Title": "FormulaRepository.cs",
               "DocumentMoniker": "C:\\Users\\dihba\\Desktop\\Coptis\\src\\CosmenticFormulaApp.Infrastructure\\Repositories\\FormulaRepository.cs",
               "RelativeDocumentMoniker": "src\\CosmenticFormulaApp.Infrastructure\\Repositories\\FormulaRepository.cs",
@@ -1522,7 +1617,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 72,
+              "DocumentIndex": 78,
               "Title": "RawMaterialSubstanceConfiguration.cs",
               "DocumentMoniker": "C:\\Users\\dihba\\Desktop\\Coptis\\src\\CosmenticFormulaApp.Infrastructure\\Data\\Configuration\\RawMaterialSubstanceConfiguration.cs",
               "RelativeDocumentMoniker": "src\\CosmenticFormulaApp.Infrastructure\\Data\\Configuration\\RawMaterialSubstanceConfiguration.cs",
@@ -1534,7 +1629,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 73,
+              "DocumentIndex": 79,
               "Title": "FormulaRawMaterialConfiguration.cs",
               "DocumentMoniker": "C:\\Users\\dihba\\Desktop\\Coptis\\src\\CosmenticFormulaApp.Infrastructure\\Data\\Configuration\\FormulaRawMaterialConfiguration.cs",
               "RelativeDocumentMoniker": "src\\CosmenticFormulaApp.Infrastructure\\Data\\Configuration\\FormulaRawMaterialConfiguration.cs",
@@ -1546,7 +1641,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 74,
+              "DocumentIndex": 80,
               "Title": "SubstanceConfiguration.cs",
               "DocumentMoniker": "C:\\Users\\dihba\\Desktop\\Coptis\\src\\CosmenticFormulaApp.Infrastructure\\Data\\Configuration\\SubstanceConfiguration.cs",
               "RelativeDocumentMoniker": "src\\CosmenticFormulaApp.Infrastructure\\Data\\Configuration\\SubstanceConfiguration.cs",
@@ -1558,7 +1653,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 76,
+              "DocumentIndex": 82,
               "Title": "FormulaConfiguration.cs",
               "DocumentMoniker": "C:\\Users\\dihba\\Desktop\\Coptis\\src\\CosmenticFormulaApp.Infrastructure\\Data\\Configuration\\FormulaConfiguration.cs",
               "RelativeDocumentMoniker": "src\\CosmenticFormulaApp.Infrastructure\\Data\\Configuration\\FormulaConfiguration.cs",
@@ -1570,7 +1665,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 77,
+              "DocumentIndex": 83,
               "Title": "ApplicationDbContext.cs",
               "DocumentMoniker": "C:\\Users\\dihba\\Desktop\\Coptis\\src\\CosmenticFormulaApp.Infrastructure\\Data\\ApplicationDbContext.cs",
               "RelativeDocumentMoniker": "src\\CosmenticFormulaApp.Infrastructure\\Data\\ApplicationDbContext.cs",
@@ -1578,11 +1673,12 @@
               "RelativeToolTip": "src\\CosmenticFormulaApp.Infrastructure\\Data\\ApplicationDbContext.cs",
               "ViewState": "AgIAAAYAAAAAAAAAAAAxwDcAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-14T21:33:30.325Z"
+              "WhenOpened": "2025-09-14T21:33:30.325Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 75,
+              "DocumentIndex": 81,
               "Title": "FormulaValidationService.cs",
               "DocumentMoniker": "C:\\Users\\dihba\\Desktop\\Coptis\\src\\CosmenticFormulaApp.Domain\\Services\\FormulaValidationService.cs",
               "RelativeDocumentMoniker": "src\\CosmenticFormulaApp.Domain\\Services\\FormulaValidationService.cs",
@@ -1594,7 +1690,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 78,
+              "DocumentIndex": 84,
               "Title": "GetSubstanceAnalysisQueryValidator.cs",
               "DocumentMoniker": "C:\\Users\\dihba\\Desktop\\Coptis\\src\\CosmenticFormulaApp.Application\\Formulas\\Queries\\GetSubstanceAnalysis\\GetSubstanceAnalysisQueryValidator.cs",
               "RelativeDocumentMoniker": "src\\CosmenticFormulaApp.Application\\Formulas\\Queries\\GetSubstanceAnalysis\\GetSubstanceAnalysisQueryValidator.cs",
@@ -1606,7 +1702,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 79,
+              "DocumentIndex": 85,
               "Title": "GetFormulasListQueryValidator.cs",
               "DocumentMoniker": "C:\\Users\\dihba\\Desktop\\Coptis\\src\\CosmenticFormulaApp.Application\\Formulas\\Queries\\GetFormulasList\\GetFormulasListQueryValidator.cs",
               "RelativeDocumentMoniker": "src\\CosmenticFormulaApp.Application\\Formulas\\Queries\\GetFormulasList\\GetFormulasListQueryValidator.cs",
@@ -1618,7 +1714,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 80,
+              "DocumentIndex": 86,
               "Title": "NotFoundException.cs",
               "DocumentMoniker": "C:\\Users\\dihba\\Desktop\\Coptis\\src\\CosmenticFormulaApp.Application\\Common\\Exceptions\\NotFoundException.cs",
               "RelativeDocumentMoniker": "src\\CosmenticFormulaApp.Application\\Common\\Exceptions\\NotFoundException.cs",
@@ -1630,7 +1726,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 81,
+              "DocumentIndex": 87,
               "Title": "ValidationException.cs",
               "DocumentMoniker": "C:\\Users\\dihba\\Desktop\\Coptis\\src\\CosmenticFormulaApp.Application\\Common\\Exceptions\\ValidationException.cs",
               "RelativeDocumentMoniker": "src\\CosmenticFormulaApp.Application\\Common\\Exceptions\\ValidationException.cs",
@@ -1642,7 +1738,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 82,
+              "DocumentIndex": 88,
               "Title": "MappingExtensions.cs",
               "DocumentMoniker": "C:\\Users\\dihba\\Desktop\\Coptis\\src\\CosmenticFormulaApp.Application\\Common\\Extensions\\MappingExtensions.cs",
               "RelativeDocumentMoniker": "src\\CosmenticFormulaApp.Application\\Common\\Extensions\\MappingExtensions.cs",
@@ -1654,7 +1750,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 83,
+              "DocumentIndex": 89,
               "Title": "GetAffectedFormulasQueryHandler.cs",
               "DocumentMoniker": "C:\\Users\\dihba\\Desktop\\Coptis\\src\\CosmenticFormulaApp.Application\\Formulas\\Queries\\GetAffectedFormulas\\GetAffectedFormulasQueryHandler.cs",
               "RelativeDocumentMoniker": "src\\CosmenticFormulaApp.Application\\Formulas\\Queries\\GetAffectedFormulas\\GetAffectedFormulasQueryHandler.cs",
@@ -1666,7 +1762,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 84,
+              "DocumentIndex": 90,
               "Title": "GetAffectedFormulasQuery.cs",
               "DocumentMoniker": "C:\\Users\\dihba\\Desktop\\Coptis\\src\\CosmenticFormulaApp.Application\\Formulas\\Queries\\GetAffectedFormulas\\GetAffectedFormulasQuery.cs",
               "RelativeDocumentMoniker": "src\\CosmenticFormulaApp.Application\\Formulas\\Queries\\GetAffectedFormulas\\GetAffectedFormulasQuery.cs",
@@ -1678,7 +1774,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 85,
+              "DocumentIndex": 91,
               "Title": "GetRawMaterialsListQueryHandler.cs",
               "DocumentMoniker": "C:\\Users\\dihba\\Desktop\\Coptis\\src\\CosmenticFormulaApp.Application\\Formulas\\Queries\\GetRawMaterialsList\\GetRawMaterialsListQueryHandler.cs",
               "RelativeDocumentMoniker": "src\\CosmenticFormulaApp.Application\\Formulas\\Queries\\GetRawMaterialsList\\GetRawMaterialsListQueryHandler.cs",
@@ -1690,7 +1786,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 86,
+              "DocumentIndex": 92,
               "Title": "GetRawMaterialsListQuery.cs",
               "DocumentMoniker": "C:\\Users\\dihba\\Desktop\\Coptis\\src\\CosmenticFormulaApp.Application\\Formulas\\Queries\\GetRawMaterialsList\\GetRawMaterialsListQuery.cs",
               "RelativeDocumentMoniker": "src\\CosmenticFormulaApp.Application\\Formulas\\Queries\\GetRawMaterialsList\\GetRawMaterialsListQuery.cs",
@@ -1702,7 +1798,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 87,
+              "DocumentIndex": 93,
               "Title": "GetSubstanceAnalysisQueryHandler.cs",
               "DocumentMoniker": "C:\\Users\\dihba\\Desktop\\Coptis\\src\\CosmenticFormulaApp.Application\\Formulas\\Queries\\GetSubstanceAnalysis\\GetSubstanceAnalysisQueryHandler.cs",
               "RelativeDocumentMoniker": "src\\CosmenticFormulaApp.Application\\Formulas\\Queries\\GetSubstanceAnalysis\\GetSubstanceAnalysisQueryHandler.cs",
@@ -1714,7 +1810,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 88,
+              "DocumentIndex": 94,
               "Title": "GetSubstanceAnalysisQuery.cs",
               "DocumentMoniker": "C:\\Users\\dihba\\Desktop\\Coptis\\src\\CosmenticFormulaApp.Application\\Formulas\\Queries\\GetSubstanceAnalysis\\GetSubstanceAnalysisQuery.cs",
               "RelativeDocumentMoniker": "src\\CosmenticFormulaApp.Application\\Formulas\\Queries\\GetSubstanceAnalysis\\GetSubstanceAnalysisQuery.cs",
@@ -1726,7 +1822,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 89,
+              "DocumentIndex": 95,
               "Title": "GetFormulasListQueryHandler.cs",
               "DocumentMoniker": "C:\\Users\\dihba\\Desktop\\Coptis\\src\\CosmenticFormulaApp.Application\\Formulas\\Queries\\GetFormulasList\\GetFormulasListQueryHandler.cs",
               "RelativeDocumentMoniker": "src\\CosmenticFormulaApp.Application\\Formulas\\Queries\\GetFormulasList\\GetFormulasListQueryHandler.cs",
@@ -1738,7 +1834,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 90,
+              "DocumentIndex": 96,
               "Title": "GetFormulasListQuery.cs",
               "DocumentMoniker": "C:\\Users\\dihba\\Desktop\\Coptis\\src\\CosmenticFormulaApp.Application\\Formulas\\Queries\\GetFormulasList\\GetFormulasListQuery.cs",
               "RelativeDocumentMoniker": "src\\CosmenticFormulaApp.Application\\Formulas\\Queries\\GetFormulasList\\GetFormulasListQuery.cs",
@@ -1750,7 +1846,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 91,
+              "DocumentIndex": 97,
               "Title": "ProcessFolderImportCommandHandler.cs",
               "DocumentMoniker": "C:\\Users\\dihba\\Desktop\\Coptis\\src\\CosmenticFormulaApp.Application\\Formulas\\Commands\\ProcessFolderImport\\ProcessFolderImportCommandHandler.cs",
               "RelativeDocumentMoniker": "src\\CosmenticFormulaApp.Application\\Formulas\\Commands\\ProcessFolderImport\\ProcessFolderImportCommandHandler.cs",
@@ -1762,7 +1858,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 92,
+              "DocumentIndex": 98,
               "Title": "ProcessFolderImportCommand.cs",
               "DocumentMoniker": "C:\\Users\\dihba\\Desktop\\Coptis\\src\\CosmenticFormulaApp.Application\\Formulas\\Commands\\ProcessFolderImport\\ProcessFolderImportCommand.cs",
               "RelativeDocumentMoniker": "src\\CosmenticFormulaApp.Application\\Formulas\\Commands\\ProcessFolderImport\\ProcessFolderImportCommand.cs",
@@ -1774,7 +1870,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 93,
+              "DocumentIndex": 99,
               "Title": "UpdateRawMaterialPriceCommandValidator.cs",
               "DocumentMoniker": "C:\\Users\\dihba\\Desktop\\Coptis\\src\\CosmenticFormulaApp.Application\\Formulas\\Commands\\UpdateRawMaterialPrice\\UpdateRawMaterialPriceCommandValidator.cs",
               "RelativeDocumentMoniker": "src\\CosmenticFormulaApp.Application\\Formulas\\Commands\\UpdateRawMaterialPrice\\UpdateRawMaterialPriceCommandValidator.cs",
@@ -1786,7 +1882,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 94,
+              "DocumentIndex": 100,
               "Title": "UpdateRawMaterialPriceCommandHandler.cs",
               "DocumentMoniker": "C:\\Users\\dihba\\Desktop\\Coptis\\src\\CosmenticFormulaApp.Application\\Formulas\\Commands\\UpdateRawMaterialPrice\\UpdateRawMaterialPriceCommandHandler.cs",
               "RelativeDocumentMoniker": "src\\CosmenticFormulaApp.Application\\Formulas\\Commands\\UpdateRawMaterialPrice\\UpdateRawMaterialPriceCommandHandler.cs",
@@ -1798,7 +1894,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 95,
+              "DocumentIndex": 101,
               "Title": "UpdateRawMaterialPriceCommand.cs",
               "DocumentMoniker": "C:\\Users\\dihba\\Desktop\\Coptis\\src\\CosmenticFormulaApp.Application\\Formulas\\Commands\\UpdateRawMaterialPrice\\UpdateRawMaterialPriceCommand.cs",
               "RelativeDocumentMoniker": "src\\CosmenticFormulaApp.Application\\Formulas\\Commands\\UpdateRawMaterialPrice\\UpdateRawMaterialPriceCommand.cs",
@@ -1810,7 +1906,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 96,
+              "DocumentIndex": 102,
               "Title": "DeleteFormulaCommandHandler.cs",
               "DocumentMoniker": "C:\\Users\\dihba\\Desktop\\Coptis\\src\\CosmenticFormulaApp.Application\\Formulas\\Commands\\DeleteFormula\\DeleteFormulaCommandHandler.cs",
               "RelativeDocumentMoniker": "src\\CosmenticFormulaApp.Application\\Formulas\\Commands\\DeleteFormula\\DeleteFormulaCommandHandler.cs",
@@ -1822,7 +1918,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 97,
+              "DocumentIndex": 103,
               "Title": "DeleteFormulaCommand.cs",
               "DocumentMoniker": "C:\\Users\\dihba\\Desktop\\Coptis\\src\\CosmenticFormulaApp.Application\\Formulas\\Commands\\DeleteFormula\\DeleteFormulaCommand.cs",
               "RelativeDocumentMoniker": "src\\CosmenticFormulaApp.Application\\Formulas\\Commands\\DeleteFormula\\DeleteFormulaCommand.cs",
@@ -1834,7 +1930,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 98,
+              "DocumentIndex": 104,
               "Title": "ImportFormulaCommandValidator.cs",
               "DocumentMoniker": "C:\\Users\\dihba\\Desktop\\Coptis\\src\\CosmenticFormulaApp.Application\\Formulas\\Commands\\ImportFormula\\ImportFormulaCommandValidator.cs",
               "RelativeDocumentMoniker": "src\\CosmenticFormulaApp.Application\\Formulas\\Commands\\ImportFormula\\ImportFormulaCommandValidator.cs",
@@ -1846,7 +1942,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 99,
+              "DocumentIndex": 105,
               "Title": "ImportFormulaCommand.cs",
               "DocumentMoniker": "C:\\Users\\dihba\\Desktop\\Coptis\\src\\CosmenticFormulaApp.Application\\Formulas\\Commands\\ImportFormula\\ImportFormulaCommand.cs",
               "RelativeDocumentMoniker": "src\\CosmenticFormulaApp.Application\\Formulas\\Commands\\ImportFormula\\ImportFormulaCommand.cs",
@@ -1858,7 +1954,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 100,
+              "DocumentIndex": 106,
               "Title": "RawMaterialListItemDto.cs",
               "DocumentMoniker": "C:\\Users\\dihba\\Desktop\\Coptis\\src\\CosmenticFormulaApp.Application\\DTOs\\Output\\RawMaterialListItemDto.cs",
               "RelativeDocumentMoniker": "src\\CosmenticFormulaApp.Application\\DTOs\\Output\\RawMaterialListItemDto.cs",
@@ -1870,7 +1966,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 101,
+              "DocumentIndex": 107,
               "Title": "RawMaterialPriceDto.cs",
               "DocumentMoniker": "C:\\Users\\dihba\\Desktop\\Coptis\\src\\CosmenticFormulaApp.Application\\DTOs\\Input\\RawMaterialPriceDto.cs",
               "RelativeDocumentMoniker": "src\\CosmenticFormulaApp.Application\\DTOs\\Input\\RawMaterialPriceDto.cs",
@@ -1882,7 +1978,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 102,
+              "DocumentIndex": 108,
               "Title": "SubstanceDto.cs",
               "DocumentMoniker": "C:\\Users\\dihba\\Desktop\\Coptis\\src\\CosmenticFormulaApp.Application\\DTOs\\Input\\SubstanceDto.cs",
               "RelativeDocumentMoniker": "src\\CosmenticFormulaApp.Application\\DTOs\\Input\\SubstanceDto.cs",
@@ -1894,7 +1990,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 103,
+              "DocumentIndex": 109,
               "Title": "RawMaterialDto.cs",
               "DocumentMoniker": "C:\\Users\\dihba\\Desktop\\Coptis\\src\\CosmenticFormulaApp.Application\\DTOs\\Input\\RawMaterialDto.cs",
               "RelativeDocumentMoniker": "src\\CosmenticFormulaApp.Application\\DTOs\\Input\\RawMaterialDto.cs",
@@ -1906,7 +2002,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 104,
+              "DocumentIndex": 110,
               "Title": "FormulaDto.cs",
               "DocumentMoniker": "C:\\Users\\dihba\\Desktop\\Coptis\\src\\CosmenticFormulaApp.Application\\DTOs\\Input\\FormulaDto.cs",
               "RelativeDocumentMoniker": "src\\CosmenticFormulaApp.Application\\DTOs\\Input\\FormulaDto.cs",
@@ -1918,7 +2014,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 105,
+              "DocumentIndex": 111,
               "Title": "TransactionBehavior.cs",
               "DocumentMoniker": "C:\\Users\\dihba\\Desktop\\Coptis\\src\\CosmenticFormulaApp.Application\\Common\\Behavior\\TransactionBehavior.cs",
               "RelativeDocumentMoniker": "src\\CosmenticFormulaApp.Application\\Common\\Behavior\\TransactionBehavior.cs",
@@ -1930,7 +2026,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 106,
+              "DocumentIndex": 112,
               "Title": "LoggingBehavior.cs",
               "DocumentMoniker": "C:\\Users\\dihba\\Desktop\\Coptis\\src\\CosmenticFormulaApp.Application\\Common\\Behavior\\LoggingBehavior.cs",
               "RelativeDocumentMoniker": "src\\CosmenticFormulaApp.Application\\Common\\Behavior\\LoggingBehavior.cs",
@@ -1942,7 +2038,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 107,
+              "DocumentIndex": 113,
               "Title": "Result.cs",
               "DocumentMoniker": "C:\\Users\\dihba\\Desktop\\Coptis\\src\\CosmenticFormulaApp.Application\\Common\\Models\\Result.cs",
               "RelativeDocumentMoniker": "src\\CosmenticFormulaApp.Application\\Common\\Models\\Result.cs",
@@ -1950,11 +2046,12 @@
               "RelativeToolTip": "src\\CosmenticFormulaApp.Application\\Common\\Models\\Result.cs",
               "ViewState": "AgIAAAkAAAAAAAAAAAA0wBMAAAAlAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-14T21:06:30.95Z"
+              "WhenOpened": "2025-09-14T21:06:30.95Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 108,
+              "DocumentIndex": 114,
               "Title": "EntityNotFoundException.cs",
               "DocumentMoniker": "C:\\Users\\dihba\\Desktop\\Coptis\\src\\CosmenticFormulaApp.Domain\\Exceptions\\EntityNotFoundException.cs",
               "RelativeDocumentMoniker": "src\\CosmenticFormulaApp.Domain\\Exceptions\\EntityNotFoundException.cs",
@@ -1966,7 +2063,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 109,
+              "DocumentIndex": 115,
               "Title": "DuplicateEntityException.cs",
               "DocumentMoniker": "C:\\Users\\dihba\\Desktop\\Coptis\\src\\CosmenticFormulaApp.Domain\\Exceptions\\DuplicateEntityException.cs",
               "RelativeDocumentMoniker": "src\\CosmenticFormulaApp.Domain\\Exceptions\\DuplicateEntityException.cs",
@@ -1978,7 +2075,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 110,
+              "DocumentIndex": 116,
               "Title": "InvalidFormulaException.cs",
               "DocumentMoniker": "C:\\Users\\dihba\\Desktop\\Coptis\\src\\CosmenticFormulaApp.Domain\\Exceptions\\InvalidFormulaException.cs",
               "RelativeDocumentMoniker": "src\\CosmenticFormulaApp.Domain\\Exceptions\\InvalidFormulaException.cs",
@@ -1990,7 +2087,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 111,
+              "DocumentIndex": 117,
               "Title": "BusinessRuleViolationException.cs",
               "DocumentMoniker": "C:\\Users\\dihba\\Desktop\\Coptis\\src\\CosmenticFormulaApp.Domain\\Exceptions\\BusinessRuleViolationException.cs",
               "RelativeDocumentMoniker": "src\\CosmenticFormulaApp.Domain\\Exceptions\\BusinessRuleViolationException.cs",
@@ -2002,7 +2099,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 112,
+              "DocumentIndex": 118,
               "Title": "DomainException.cs",
               "DocumentMoniker": "C:\\Users\\dihba\\Desktop\\Coptis\\src\\CosmenticFormulaApp.Domain\\Exceptions\\DomainException.cs",
               "RelativeDocumentMoniker": "src\\CosmenticFormulaApp.Domain\\Exceptions\\DomainException.cs",
@@ -2014,7 +2111,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 113,
+              "DocumentIndex": 119,
               "Title": "ImportSource.cs",
               "DocumentMoniker": "C:\\Users\\dihba\\Desktop\\Coptis\\src\\CosmenticFormulaApp.Domain\\Enums\\ImportSource.cs",
               "RelativeDocumentMoniker": "src\\CosmenticFormulaApp.Domain\\Enums\\ImportSource.cs",
@@ -2027,7 +2124,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 114,
+              "DocumentIndex": 120,
               "Title": "SortBy.cs",
               "DocumentMoniker": "C:\\Users\\dihba\\Desktop\\Coptis\\src\\CosmenticFormulaApp.Domain\\Enums\\SortBy.cs",
               "RelativeDocumentMoniker": "src\\CosmenticFormulaApp.Domain\\Enums\\SortBy.cs",
@@ -2039,7 +2136,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 115,
+              "DocumentIndex": 121,
               "Title": "WeightUnit.cs",
               "DocumentMoniker": "C:\\Users\\dihba\\Desktop\\Coptis\\src\\CosmenticFormulaApp.Domain\\Enums\\WeightUnit.cs",
               "RelativeDocumentMoniker": "src\\CosmenticFormulaApp.Domain\\Enums\\WeightUnit.cs",
@@ -2051,7 +2148,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 116,
+              "DocumentIndex": 122,
               "Title": "Currency.cs",
               "DocumentMoniker": "C:\\Users\\dihba\\Desktop\\Coptis\\src\\CosmenticFormulaApp.Domain\\Enums\\Currency.cs",
               "RelativeDocumentMoniker": "src\\CosmenticFormulaApp.Domain\\Enums\\Currency.cs",
@@ -2063,7 +2160,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 117,
+              "DocumentIndex": 123,
               "Title": "SubstanceAnalysisData.cs",
               "DocumentMoniker": "C:\\Users\\dihba\\Desktop\\Coptis\\src\\CosmenticFormulaApp.Domain\\Models\\SubstanceAnalysisData.cs",
               "RelativeDocumentMoniker": "src\\CosmenticFormulaApp.Domain\\Models\\SubstanceAnalysisData.cs",
@@ -2075,7 +2172,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 118,
+              "DocumentIndex": 124,
               "Title": "FormulaDeletedEvent.cs",
               "DocumentMoniker": "C:\\Users\\dihba\\Desktop\\Coptis\\src\\CosmenticFormulaApp.Domain\\Events\\FormulaDeletedEvent.cs",
               "RelativeDocumentMoniker": "src\\CosmenticFormulaApp.Domain\\Events\\FormulaDeletedEvent.cs",
@@ -2087,7 +2184,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 119,
+              "DocumentIndex": 125,
               "Title": "FormulaCostRecalculatedEvent.cs",
               "DocumentMoniker": "C:\\Users\\dihba\\Desktop\\Coptis\\src\\CosmenticFormulaApp.Domain\\Events\\FormulaCostRecalculatedEvent.cs",
               "RelativeDocumentMoniker": "src\\CosmenticFormulaApp.Domain\\Events\\FormulaCostRecalculatedEvent.cs",
@@ -2099,7 +2196,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 120,
+              "DocumentIndex": 126,
               "Title": "RawMaterialPriceUpdatedEvent.cs",
               "DocumentMoniker": "C:\\Users\\dihba\\Desktop\\Coptis\\src\\CosmenticFormulaApp.Domain\\Events\\RawMaterialPriceUpdatedEvent.cs",
               "RelativeDocumentMoniker": "src\\CosmenticFormulaApp.Domain\\Events\\RawMaterialPriceUpdatedEvent.cs",
@@ -2111,7 +2208,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 121,
+              "DocumentIndex": 127,
               "Title": "DomainEvent.cs",
               "DocumentMoniker": "C:\\Users\\dihba\\Desktop\\Coptis\\src\\CosmenticFormulaApp.Domain\\Events\\DomainEvent.cs",
               "RelativeDocumentMoniker": "src\\CosmenticFormulaApp.Domain\\Events\\DomainEvent.cs",
@@ -2123,7 +2220,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 122,
+              "DocumentIndex": 128,
               "Title": "IRawMaterialRepository.cs",
               "DocumentMoniker": "C:\\Users\\dihba\\Desktop\\Coptis\\src\\CosmenticFormulaApp.Domain\\Repositories\\IRawMaterialRepository.cs",
               "RelativeDocumentMoniker": "src\\CosmenticFormulaApp.Domain\\Repositories\\IRawMaterialRepository.cs",
@@ -2135,7 +2232,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 123,
+              "DocumentIndex": 129,
               "Title": "IFormulaRepository.cs",
               "DocumentMoniker": "C:\\Users\\dihba\\Desktop\\Coptis\\src\\CosmenticFormulaApp.Domain\\Repositories\\IFormulaRepository.cs",
               "RelativeDocumentMoniker": "src\\CosmenticFormulaApp.Domain\\Repositories\\IFormulaRepository.cs",
@@ -2147,7 +2244,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 124,
+              "DocumentIndex": 130,
               "Title": "RawMaterialSubstance.cs",
               "DocumentMoniker": "C:\\Users\\dihba\\Desktop\\Coptis\\src\\CosmenticFormulaApp.Domain\\Entities\\RawMaterialSubstance.cs",
               "RelativeDocumentMoniker": "src\\CosmenticFormulaApp.Domain\\Entities\\RawMaterialSubstance.cs",
@@ -2159,7 +2256,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 125,
+              "DocumentIndex": 131,
               "Title": "Substance.cs",
               "DocumentMoniker": "C:\\Users\\dihba\\Desktop\\Coptis\\src\\CosmenticFormulaApp.Domain\\Entities\\Substance.cs",
               "RelativeDocumentMoniker": "src\\CosmenticFormulaApp.Domain\\Entities\\Substance.cs",
@@ -2167,12 +2264,11 @@
               "RelativeToolTip": "src\\CosmenticFormulaApp.Domain\\Entities\\Substance.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABwAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-14T20:43:11.414Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-09-14T20:43:11.414Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 126,
+              "DocumentIndex": 132,
               "Title": "FormulaRawMaterial.cs",
               "DocumentMoniker": "C:\\Users\\dihba\\Desktop\\Coptis\\src\\CosmenticFormulaApp.Domain\\Entities\\FormulaRawMaterial.cs",
               "RelativeDocumentMoniker": "src\\CosmenticFormulaApp.Domain\\Entities\\FormulaRawMaterial.cs",
@@ -2184,7 +2280,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 127,
+              "DocumentIndex": 133,
               "Title": "Price.cs",
               "DocumentMoniker": "C:\\Users\\dihba\\Desktop\\Coptis\\src\\CosmenticFormulaApp.Domain\\ValueObjects\\Price.cs",
               "RelativeDocumentMoniker": "src\\CosmenticFormulaApp.Domain\\ValueObjects\\Price.cs",
@@ -2196,7 +2292,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 128,
+              "DocumentIndex": 134,
               "Title": "IAggregateRoot.cs",
               "DocumentMoniker": "C:\\Users\\dihba\\Desktop\\Coptis\\src\\CosmenticFormulaApp.Domain\\Entities\\Common\\IAggregateRoot.cs",
               "RelativeDocumentMoniker": "src\\CosmenticFormulaApp.Domain\\Entities\\Common\\IAggregateRoot.cs",
@@ -2208,7 +2304,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 129,
+              "DocumentIndex": 135,
               "Title": "BaseEntity.cs",
               "DocumentMoniker": "C:\\Users\\dihba\\Desktop\\Coptis\\src\\CosmenticFormulaApp.Domain\\Entities\\Common\\BaseEntity.cs",
               "RelativeDocumentMoniker": "src\\CosmenticFormulaApp.Domain\\Entities\\Common\\BaseEntity.cs",
@@ -2217,24 +2313,20 @@
               "ViewState": "AgIAABQAAAAAAAAAAAAzwAMAAAAKAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-09-14T20:29:58.273Z"
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{aa2115a1-9712-457b-9047-dbb71ca2cdd2}"
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{cce594b6-0c39-4442-ba28-10c64ac7e89f}"
             }
           ]
         },
         {
-          "DockedHeight": 111,
+          "DockedHeight": 91,
           "SelectedChildIndex": -1,
           "Children": [
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:5:0:{e8034f19-ab72-4f06-83fd-f6832b41aa63}"
             },
             {
               "$type": "Bookmark",

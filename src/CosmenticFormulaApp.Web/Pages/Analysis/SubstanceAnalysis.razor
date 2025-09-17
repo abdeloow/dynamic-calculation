@@ -63,7 +63,7 @@
             <label class="form-label">Show Details</label>
             <div class="form-check form-switch mt-2">
                 <input class="form-check-input" type="checkbox" id="showFormulaCount" 
-                       @bind="includeFormulaCount" @onchange="OnIncludeFormulaCountChanged">
+                       @bind="includeFormulaCount" @bind:after="OnIncludeFormulaCountChanged">
                 <label class="form-check-label" for="showFormulaCount">
                     Formula Count
                 </label>

@@ -17,6 +17,7 @@ builder.Services.AddInfrastructure(builder.Configuration);
 builder.Services.AddScoped<INotificationService, NotificationService>();
 builder.Services.AddScoped<IFileUploadService, FileUploadService>();
 builder.Services.AddScoped<IUIStateService, UIStateService>();
+builder.Services.AddScoped<ISignalRService, SignalRService>();
 
 // Add SignalR
 builder.Services.AddSignalR();

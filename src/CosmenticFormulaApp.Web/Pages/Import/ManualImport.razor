@@ -7,6 +7,7 @@
 @using MediatR
 @inject IMediator Mediator
 @inject INotificationService NotificationService
+@inject IFileUploadService FileUploadService
 
 <PageTitle>Import Formula - Cosmetic Formula Manager</PageTitle>
 
@@ -44,7 +45,8 @@
 
                     @if (selectedFiles.Any())
                     {
-                        <div class="mt-3">
+                        <!-- Selected Files Section - Separate from DropZone -->
+                        <div class="mt-4 pt-3 border-top">
                             <h6>Selected Files:</h6>
                             <ul class="list-group">
                                 @foreach (var file in selectedFiles)
@@ -55,23 +57,34 @@
                                             <br>
                                             <small class="text-muted">@GetFileSize(file.Size)</small>
                                         </div>
-                                        <button class="btn btn-sm btn-outline-danger" 
-                                               @onclick="() => RemoveFile(file)">
+                                        <button type="button" class="btn btn-sm btn-outline-danger" 
+                                               @onclick="() => RemoveFile(file)"
+                                               @onclick:stopPropagation="true">
                                             <span class="oi oi-x"></span>
                                         </button>
                                     </li>
                                 }
                             </ul>
                             
-                            <div class="mt-3">
-                                <button class="btn btn-primary" 
+                            <!-- Action Buttons - Separate container -->
+                            <div class="mt-3 d-flex gap-2">
+                                <button type="button" class="btn btn-primary" 
                                        @onclick="ProcessSelectedFiles" 
+                                       @onclick:stopPropagation="true"
                                        disabled="@isUploading">
-                                    <span class="oi oi-cloud-upload me-2"></span>
+                                    @if (isUploading)
+                                    {
+                                        <span class="spinner-border spinner-border-sm me-2"></span>
+                                    }
+                                    else
+                                    {
+                                        <span class="oi oi-cloud-upload me-2"></span>
+                                    }
                                     Import @selectedFiles.Count File@(selectedFiles.Count == 1 ? "" : "s")
                                 </button>
-                                <button class="btn btn-outline-secondary ms-2" 
-                                       @onclick="ClearSelectedFiles">
+                                <button type="button" class="btn btn-outline-secondary" 
+                                       @onclick="ClearSelectedFiles"
+                                       @onclick:stopPropagation="true">
                                     Clear All
                                 </button>
                             </div>
@@ -115,7 +128,9 @@
                     </ul>
 
                     <div class="mt-3">
-                        <button class="btn btn-outline-info btn-sm" @onclick="ShowSampleData">
+                        <button type="button" class="btn btn-outline-info btn-sm" 
+                               @onclick="ShowSampleData"
+                               @onclick:stopPropagation="true">
                             <span class="oi oi-document me-1"></span>
                             View Sample Format
                         </button>
@@ -226,10 +241,54 @@
 
         try
         {
-            // Process files through upload service
-            var uploadResults = await FileUploadService.ProcessFilesAsync(selectedFiles.ToList());
-            
-            // Import each successfully uploaded file
+            var uploadResults = new List<UploadResult>();
+
+            foreach (var file in selectedFiles)
+            {
+                try
+                {
+                    if (file.Size > 5 * 1024 * 1024) // 5MB limit
+                    {
+                        uploadResults.Add(new UploadResult
+                        {
+                            FileName = file.Name,
+                            Success = false,
+                            Message = "File size exceeds 5MB limit"
+                        });
+                        continue;
+                    }
+                    if (!file.Name.EndsWith(".json", StringComparison.OrdinalIgnoreCase))
+                    {
+                        uploadResults.Add(new UploadResult
+                        {
+                            FileName = file.Name,
+                            Success = false,
+                            Message = "Only JSON files are allowed"
+                        });
+                        continue;
+                    }
+                    using var stream = file.OpenReadStream(5 * 1024 * 1024);
+                    using var reader = new StreamReader(stream);
+                    var content = await reader.ReadToEndAsync();
+
+                    uploadResults.Add(new UploadResult
+                    {
+                        FileName = file.Name,
+                        Success = true,
+                        Content = content,
+                        Message = "File read successfully"
+                    });
+                }
+                catch (Exception ex)
+                {
+                    uploadResults.Add(new UploadResult
+                    {
+                        FileName = file.Name,
+                        Success = false,
+                        Message = $"Error reading file: {ex.Message}"
+                    });
+                }
+            }
             foreach (var uploadResult in uploadResults)
             {
                 if (uploadResult.Success)
@@ -252,8 +311,8 @@
 
             var successCount = importResults.Count(r => r.Success);
             var totalCount = importResults.Count;
-            
-            if (successCount == totalCount)
+
+            if (successCount == totalCount && totalCount > 0)
             {
                 NotificationService.ShowSuccess($"All {successCount} file(s) imported successfully!");
             }
@@ -261,7 +320,7 @@
             {
                 NotificationService.ShowWarning($"{successCount} of {totalCount} file(s) imported successfully.");
             }
-            else
+            else if (totalCount > 0)
             {
                 NotificationService.ShowError("No files were imported successfully.");
             }
@@ -276,7 +335,6 @@
             StateHasChanged();
         }
     }
-
     private async Task ImportFormula(UploadResult uploadResult)
     {
         try

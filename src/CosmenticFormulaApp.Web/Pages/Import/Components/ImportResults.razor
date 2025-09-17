@@ -16,6 +16,10 @@
                     <div>
                         <strong>@result.FileName</strong>
                         <p class="mb-0 mt-1">@result.Message</p>
+                        @if (result.FormulaId.HasValue && result.Success)
+                        {
+                            <small class="text-muted">Formula ID: @result.FormulaId</small>
+                        }
                     </div>
                     <div>
                         @if (result.Success)
@@ -34,6 +38,6 @@
 </div>
 
 @code {
-    [Parameter] public List<ImportResult> Results { get; set; } = new();
+    [Parameter] public List<CosmenticFormulaApp.Web.Models.ImportResult> Results { get; set; } = new();
     [Parameter] public EventCallback OnClear { get; set; }
 }

@@ -10,10 +10,9 @@
 		<PackageReference Include="Swashbuckle.AspNetCore" Version="6.4.0" />
 	</ItemGroup>
 
-	<ItemGroup>
-	  <ProjectReference Include="..\src\CosmenticFormulaApp.Application\CosmenticFormulaApp.Application.csproj" />
-	  <ProjectReference Include="..\src\CosmenticFormulaApp.Domain\CosmenticFormulaApp.Domain.csproj" />
-	  <ProjectReference Include="..\src\CosmenticFormulaApp.Infrastructure\CosmenticFormulaApp.Infrastructure.csproj" />
-	</ItemGroup>
+		  <ProjectReference Include="..\CosmenticFormulaApp.Application\CosmenticFormulaApp.Application.csproj" />
+	  <ProjectReference Include="..\CosmenticFormulaApp.Domain\CosmenticFormulaApp.Domain.csproj" />
+	  <ProjectReference Include="..\CosmenticFormulaApp.Infrastructure\CosmenticFormulaApp.Infrastructure.csproj" />
+
 
 </Project>
